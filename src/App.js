@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import React, { Component } from "react";
+import { Route, Routes, HashRouter } from "react-router-dom";
 import "particles.js";
 
-import './css/particalsJS.css'
+import "./css/particalsJS.css";
 
 import HomePage from "./pages/home";
 import AboutPage from "./pages/about";
@@ -16,7 +16,6 @@ import ResumePage from "./pages/resume";
 // import FAQ from './pages/faq';
 
 import FlyoutNav from "./components/FlyoutNav";
-
 
 class App extends Component {
   constructor(props) {
@@ -41,22 +40,21 @@ class App extends Component {
     return (
       <div id="particles-js" style={{position: 'absolute', width: '100%', height: '100%', zIndex: -1}}>
       <div className="App">
-      
-      <BrowserRouter>
-        <FlyoutNav />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/experience" element={<ExperiencePage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/portfolio" element={<PortfolioPage />} />
-          <Route path="/skills" element={<SkillsPage />} />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/testimonials" element={<TestimonialsPage />} />
-          <Route path="/resume" element={<ResumePage />} />
-        </Routes>
-      </BrowserRouter>
-      </div>
+           <HashRouter>
+            <FlyoutNav />
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/experience" element={<ExperiencePage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/portfolio" element={<PortfolioPage />} />
+              <Route path="/skills" element={<SkillsPage />} />
+              <Route path="/blog" element={<BlogPage />} />
+              <Route path="/testimonials" element={<TestimonialsPage />} />
+              <Route path="/resume" element={<ResumePage />} />
+            </Routes>
+          </HashRouter>
+        </div>
       </div>
     );
   }
