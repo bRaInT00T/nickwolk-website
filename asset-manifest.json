@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/nickwolk-website/static/css/main.f855e6bc.css",
-    "main.js": "/nickwolk-website/static/js/main.c76443e8.js",
+    "main.css": "/nickwolk-website/static/css/main.f270d998.css",
+    "main.js": "/nickwolk-website/static/js/main.5f86d3b3.js",
     "static/js/453.660e32dd.chunk.js": "/nickwolk-website/static/js/453.660e32dd.chunk.js",
-    "static/media/logo.svg": "/nickwolk-website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/Nicholas_Wolk_Resume.pdf": "/nickwolk-website/static/media/Nicholas_Wolk_Resume.713307feddedcb09b851.pdf",
+    "static/media/cert.svg": "/nickwolk-website/static/media/cert.868d055cc381b57a3aa976465d8aba3a.svg",
+    "static/media/school.svg": "/nickwolk-website/static/media/school.3a1ebafa3207ea504f170dc3aa7a5d45.svg",
     "index.html": "/nickwolk-website/index.html",
-    "main.f855e6bc.css.map": "/nickwolk-website/static/css/main.f855e6bc.css.map",
-    "main.c76443e8.js.map": "/nickwolk-website/static/js/main.c76443e8.js.map",
+    "static/media/work.svg": "/nickwolk-website/static/media/work.3710b62484ed638074240e99317c6c60.svg",
+    "main.f270d998.css.map": "/nickwolk-website/static/css/main.f270d998.css.map",
+    "main.5f86d3b3.js.map": "/nickwolk-website/static/js/main.5f86d3b3.js.map",
     "453.660e32dd.chunk.js.map": "/nickwolk-website/static/js/453.660e32dd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.c76443e8.js"
+    "static/css/main.f270d998.css",
+    "static/js/main.5f86d3b3.js"
   ]
 }
