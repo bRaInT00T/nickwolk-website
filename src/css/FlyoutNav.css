@@ -1,0 +1,108 @@
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 300ms ease; /* Smooth transition for background color change */
+    z-index: 1000;
+  }
+  
+  .nav-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between
+  }
+  
+  .logo img {
+    height: 50px; /* Control the size of your logo */
+    width: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Aligns the logo vertically with other nav items */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-item {
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  .nav-link {
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px; /* Height of the underline */
+    background-color: #A5B6F9; /* Color of the underline */
+    transition: width 0.3s ease-in-out; /* Smooth transition for the animation */
+  }
+  
+  .nav-link:hover::after {
+    width: 100%; /* Full width on hover */
+  }
+
+  .with-dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .mobile-menu-icon {
+    display: none; /* Hide on desktop */
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide links on small screens */
+    }
+  
+    .mobile-menu-icon {
+      display: block; /* Show hamburger icon */
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  
+    .mobile-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      /* background-color: #333; */
+      text-align: center;
+    }
+  
+    .mobile-menu a {
+      display: block;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+    }
+  }
+  

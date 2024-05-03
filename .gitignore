@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Setup files
+setup.sh
+
+# Testing files
+* copy*
+*.bk*

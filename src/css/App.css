@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+  background-attachment: fixed;
+}
+
+.resume-download-container {
+  text-align: center;
+  padding: 50px;
+  color: #333;
+}
+
+.download-button {
+  background-color: #0056b3;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.download-button:hover {
+  background-color: #004494;
+}
+
+.div-img {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 20%;
+}
+
+img {
+  transition: transform .5s;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  /* border-radius: 10px;
+  border: 1px solid black; */
+}
