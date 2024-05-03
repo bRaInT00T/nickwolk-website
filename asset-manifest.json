@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/nickwolk-website/static/css/main.26679b34.css",
-    "main.js": "/nickwolk-website/static/js/main.00308cde.js",
-    "static/js/453.660e32dd.chunk.js": "/nickwolk-website/static/js/453.660e32dd.chunk.js",
-    "static/media/Nicholas_Wolk_Resume.pdf": "/nickwolk-website/static/media/Nicholas_Wolk_Resume.713307feddedcb09b851.pdf",
-    "static/media/cert.svg": "/nickwolk-website/static/media/cert.868d055cc381b57a3aa976465d8aba3a.svg",
-    "static/media/school.svg": "/nickwolk-website/static/media/school.3a1ebafa3207ea504f170dc3aa7a5d45.svg",
-    "index.html": "/nickwolk-website/index.html",
-    "static/media/work.svg": "/nickwolk-website/static/media/work.3710b62484ed638074240e99317c6c60.svg",
-    "main.26679b34.css.map": "/nickwolk-website/static/css/main.26679b34.css.map",
-    "main.00308cde.js.map": "/nickwolk-website/static/js/main.00308cde.js.map",
-    "453.660e32dd.chunk.js.map": "/nickwolk-website/static/js/453.660e32dd.chunk.js.map"
+    "main.css": "/static/css/main.26679b34.css",
+    "main.js": "/static/js/main.e7b0bb43.js",
+    "static/js/453.660e32dd.chunk.js": "/static/js/453.660e32dd.chunk.js",
+    "static/media/Nicholas_Wolk_Resume.pdf": "/static/media/Nicholas_Wolk_Resume.713307feddedcb09b851.pdf",
+    "static/media/cert.svg": "/static/media/cert.868d055cc381b57a3aa976465d8aba3a.svg",
+    "static/media/school.svg": "/static/media/school.3a1ebafa3207ea504f170dc3aa7a5d45.svg",
+    "static/media/work.svg": "/static/media/work.3710b62484ed638074240e99317c6c60.svg",
+    "index.html": "/index.html",
+    "main.26679b34.css.map": "/static/css/main.26679b34.css.map",
+    "main.e7b0bb43.js.map": "/static/js/main.e7b0bb43.js.map",
+    "453.660e32dd.chunk.js.map": "/static/js/453.660e32dd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.26679b34.css",
-    "static/js/main.00308cde.js"
+    "static/js/main.e7b0bb43.js"
   ]
 }
