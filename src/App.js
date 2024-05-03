@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Routes, HashRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "particles.js";
 
 import "./css/particalsJS.css";
@@ -39,8 +39,6 @@ class App extends Component {
   render() {
     return (
       <div id="particles-js" style={{position: 'absolute', width: '100%', height: '100%', zIndex: -1}}>
-      <div className="App">
-           <HashRouter>
             <FlyoutNav />
             <Routes>
               <Route path="/" element={<HomePage />} />
@@ -53,8 +51,6 @@ class App extends Component {
               <Route path="/testimonials" element={<TestimonialsPage />} />
               <Route path="/resume" element={<ResumePage />} />
             </Routes>
-          </HashRouter>
-        </div>
       </div>
     );
   }
