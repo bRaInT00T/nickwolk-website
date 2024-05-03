@@ -45,7 +45,7 @@ function experience() {
                   <td>
                     {showlogo && (
                       <a href={element.link} target="_blank" rel="noopener noreferrer">
-                        <div className="div-img">
+                        <div className="icon">
                           <img
                             className="coIcon"
                             src={element.logo}

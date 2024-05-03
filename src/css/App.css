@@ -23,13 +23,6 @@
   background-color: #004494;
 }
 
-.div-img {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  padding-top: 20%;
-}
-
 img {
   transition: transform .5s;
   width: 50px;
