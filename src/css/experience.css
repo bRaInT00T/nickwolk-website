@@ -2,13 +2,18 @@
   font-size: 5em;
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
+  color: #ffffff;
 }
 
-h3 {
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+h1, h2, h3 {
   padding-top: 0.25em;
 }
-
-
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
@@ -22,7 +27,7 @@ h3 {
   .vertical-timeline-element-date {
     display: block !important;
     float: none !important;
-    color: rgb(44, 44, 44);
+    color: #ffffff;
     margin-top: 1.5em;
   }
 }
@@ -46,10 +51,22 @@ h3 {
 
 .vertical-timeline-element-title {
   font-size: 1.5em;
+  color: #3263ac;
 }
 
 .vertical-timeline-element-subtitle {
   font-size: 1em;
+  color: #243f68;
+}
+
+.date {
+  font-size: 1em;
+  color: #ffffff;
+}
+
+#description {
+  font-size: 1em;
+  color: #000000;
 }
 
 .workButton {

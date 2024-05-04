@@ -1,8 +1,32 @@
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #2E4951;
+  color: #ffffff;
+}
+
 .App {
   text-align: center;
   background-attachment: fixed;
+  background-color: #2E4951;
 }
 
+h1 {
+  font-size: 3em;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  color: #ffffff;
+  z-index: 1;
+}
+p {
+  font-size: 1.5em;
+  font-family: "Bebas Neue", sans-serif;
+  color: #ffffff;
+  z-index: 1;
+}
 .resume-download-container {
   text-align: center;
   padding: 50px;
@@ -30,4 +54,14 @@ img {
   margin: 0 auto;
   /* border-radius: 10px;
   border: 1px solid black; */
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #2E4951;
 }

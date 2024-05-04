@@ -16,7 +16,7 @@ function experience() {
 
   return (
     <div>
-      <h1 className="title">Experience</h1>
+      <h1 class="title">Experience</h1>
       <VerticalTimeline>
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";

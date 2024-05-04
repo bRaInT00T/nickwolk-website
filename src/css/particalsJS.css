@@ -2,6 +2,9 @@
 body {
   margin: 0;
   font: normal 75% Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 canvas {
   vertical-align: bottom;
@@ -13,10 +16,6 @@ canvas {
   z-index: -1;
   background-color: #0d5b72;
   /* background-image: url(""); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 
 } /* ---- stats.js ---- */
 .count-particles {

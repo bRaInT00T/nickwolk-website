@@ -25,7 +25,7 @@ const FlyoutNav = () => {
         <img className="navbar-logo" id='logo' alt='NW Logo' src={Logo}/>
         <ul className="nav-links">
           <li className="nav-item">
-            <NavLink to="home" className="nav-link">Home</NavLink>
+            <NavLink to="" className="nav-link">Home</NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="experience" className="nav-link">Experience</NavLink>

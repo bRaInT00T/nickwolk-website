@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { Route, Routes } from "react-router-dom";
 import "particles.js";
 
-import "./css/particalsJS.css";
-
+import "./css/App.css";
 import HomePage from "./pages/home";
 import AboutPage from "./pages/about";
 import ExperiencePage from "./pages/experience";
@@ -38,20 +37,22 @@ class App extends Component {
 
   render() {
     return (
-      <div id="particles-js" style={{position: 'absolute', width: '100%', height: '100%', zIndex: -1}}>
-            <FlyoutNav />
-            <Routes>
-              <Route path="" element={<HomePage />} />
-              <Route path="about" element={<AboutPage />} />
-              <Route path="experience" element={<ExperiencePage />} />
-              <Route path="contact" element={<ContactPage />} />
-              <Route path="portfolio" element={<PortfolioPage />} />
-              <Route path="skills" element={<SkillsPage />} />
-              <Route path="blog" element={<BlogPage />} />
-              <Route path="testimonials" element={<TestimonialsPage />} />
-              <Route path="resume" element={<ResumePage />} />
-            </Routes>
-      </div>
+      <div>
+
+        <div id="particles-js"></div>
+          <FlyoutNav />
+          <Routes>
+            <Route path="" element={<HomePage />} />
+            <Route path="about" element={<AboutPage />} />
+            <Route path="experience" element={<ExperiencePage />} />
+            <Route path="contact" element={<ContactPage />} />
+            <Route path="portfolio" element={<PortfolioPage />} />
+            <Route path="skills" element={<SkillsPage />} />
+            <Route path="blog" element={<BlogPage />} />
+            <Route path="testimonials" element={<TestimonialsPage />} />
+            <Route path="resume" element={<ResumePage />} />
+          </Routes>
+</div> 
     );
   }
 }
