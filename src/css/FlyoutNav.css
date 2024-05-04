@@ -13,7 +13,7 @@
     width: auto; /* Maintain aspect ratio */
     vertical-align: middle; /* Aligns the logo vertically with other nav items */
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.29);
-    margin: 5px;
+    margin: 10px 0px 0px 50px; /* Control the margin of your logo - Top Right Bottom Left */
   }
 
   .nav-content {
