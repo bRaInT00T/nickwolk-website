@@ -25,31 +25,31 @@ const FlyoutNav = () => {
         <img className="navbar-logo" id='logo' alt='NW Logo' src={Logo}/>
         <ul className="nav-links">
           <li className="nav-item">
-            <NavLink to="/home" className="nav-link">Home</NavLink>
+            <NavLink to="home" className="nav-link">Home</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/experience" className="nav-link">Experience</NavLink>
+            <NavLink to="experience" className="nav-link">Experience</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/about" className="nav-link">About</NavLink>
+            <NavLink to="about" className="nav-link">About</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/contact" className="nav-link">Contact</NavLink>
+            <NavLink to="contact" className="nav-link">Contact</NavLink>
           </li>
           {/* <li className="nav-item">
-            <NavLink to="/blog" className="nav-link">Blog</NavLink>
+            <NavLink to="blog" className="nav-link">Blog</NavLink>
           </li> */}
           <li className="nav-item">
-            <NavLink to="/resume" className="nav-link">Resume</NavLink>
+            <NavLink to="resume" className="nav-link">Resume</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/skills" className="nav-link">Skills</NavLink>
+            <NavLink to="skills" className="nav-link">Skills</NavLink>
           </li>
           {/* <li className="nav-item">
-            <NavLink to="/portfolio" className="nav-link">Portfolio</NavLink>
+            <NavLink to="portfolio" className="nav-link">Portfolio</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/faq" className="nav-link">FAQ</NavLink>
+            <NavLink to="faq" className="nav-link">FAQ</NavLink>
           </li> */}
         </ul>
         <button className="mobile-menu-icon" onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
