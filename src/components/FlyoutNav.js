@@ -58,15 +58,15 @@ const FlyoutNav = () => {
       </div>
       {isMobileMenuOpen && (
         <div className="mobile-menu">
-          <NavLink to="/home">Home</NavLink>
-          <NavLink to="/experience">Services</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
-          <NavLink to="/blog">Blog</NavLink>
-          <NavLink to="/resume">Resume</NavLink>
-          <NavLink to="/skills">Skills</NavLink>
-          <NavLink to="/portfolio">Portfolio</NavLink>
-          <NavLink to="/faq">FAQ</NavLink>
+          <NavLink to="">Home</NavLink>
+          <NavLink to="experience">Services</NavLink>
+          <NavLink to="about">About</NavLink>
+          <NavLink to="contact">Contact</NavLink>
+          <NavLink to="blog">Blog</NavLink>
+          <NavLink to="resume">Resume</NavLink>
+          <NavLink to="skills">Skills</NavLink>
+          <NavLink to="portfolio">Portfolio</NavLink>
+          <NavLink to="faq">FAQ</NavLink>
         </div>
       )}
     </nav>
