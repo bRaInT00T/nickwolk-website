@@ -27,23 +27,23 @@ const FlyoutNav = () => {
           <img className="navbar-logo" id='logo' alt='NW Logo' src={Logo} />
         </NavLink>
         <ul className="nav-links">
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <NavLink to="" className="nav-link">Home</NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink to="experience" className="nav-link">Experience</NavLink>
-          </li>
+          </li> */}
           <li className="nav-item">
             <NavLink to="about" className="nav-link">About</NavLink>
           </li>
           <li className="nav-item">
+            <NavLink to="experience" className="nav-link">Experience</NavLink>
+          </li>
+          {/* <li className="nav-item">
             <NavLink to="contact" className="nav-link">Contact</NavLink>
+          </li> */}
+          <li className="nav-item">
+            <NavLink to="skills" className="nav-link">Skills</NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="resume" className="nav-link">Resume</NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink to="skills" className="nav-link">Skills</NavLink>
           </li>
         </ul>
         <button className="mobile-menu-icon" onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
@@ -52,12 +52,12 @@ const FlyoutNav = () => {
       </div>
       {isMobileMenuOpen && (
         <div className="mobile-menu">
-          <NavLink to="/" onClick={closeMobileMenu}>Home</NavLink>
-          <NavLink to="experience" onClick={closeMobileMenu}>Experience</NavLink>
+          {/* <NavLink to="/" onClick={closeMobileMenu}>Home</NavLink> */}
           <NavLink to="about" onClick={closeMobileMenu}>About</NavLink>
-          <NavLink to="contact" onClick={closeMobileMenu}>Contact</NavLink>
-          <NavLink to="resume" onClick={closeMobileMenu}>Resume</NavLink>
+          <NavLink to="experience" onClick={closeMobileMenu}>Experience</NavLink>
+          {/* <NavLink to="contact" onClick={closeMobileMenu}>Contact</NavLink> */}
           <NavLink to="skills" onClick={closeMobileMenu}>Skills</NavLink>
+          <NavLink to="resume" onClick={closeMobileMenu}>Resume</NavLink>
         </div>
       )}
     </nav>

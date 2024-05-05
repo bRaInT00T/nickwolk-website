@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
 body {
   margin: 0;
   font: normal 75% Arial, Helvetica, sans-serif;
@@ -17,20 +19,20 @@ body {
 h1 {
   font-size: 3em;
   text-align: center;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Roboto Slab", serif;
   color: #ffffff;
   z-index: 1;
 }
 p {
   font-size: 1.5em;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Roboto Slab", serif;
   color: #ffffff;
   z-index: 1;
 }
 
 label {
   font-size: 1.5em;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Roboto Slab", serif;
   color: #ffffff;
   z-index: 1;
 }
@@ -42,8 +44,10 @@ ul li {
 
 .resume-download-container {
   text-align: center;
-  padding: 50px;
+  padding: 20px;
   color: #333;
+  /* max-Width: 800px; */
+  margin: 'auto'
 }
 
 .download-button {

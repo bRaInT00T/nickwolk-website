@@ -15,7 +15,7 @@ function experience() {
   let certIconStyles = { background: "#eb8e5c" };
 
   return (
-    <div>
+    <div style={{ padding: '20px', margin: 'auto' }}>
       <h1 class="title">Experience</h1>
       <VerticalTimeline>
         {timelineElements.map((element) => {
