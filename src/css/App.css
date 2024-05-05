@@ -65,3 +65,28 @@ img {
   z-index: -1;
   background-color: #2E4951;
 }
+
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.cdnfonts.com/css/modern-typewriter');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+.typewriter-text {
+  /* font-family: "Courier New", system-ui; */
+  /* font-family: "MODERN TYPEWRITER", sans-serif; */
+  font-family: "Gloria Hallelujah", cursive;
+  text-align: center;
+  font-size: 30px; /* Adjust size to fit your design */
+}
+
+.cursor {
+  font-family: "Gloria Hallelujah", cursive;
+  animation: blink 0.7s steps(2, start) infinite;
+  border-right: 1px solid;
+  margin-left: 2px;
+}

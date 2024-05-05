@@ -6,6 +6,7 @@ import Logo from '../assets/img_desktop.svg';
 const FlyoutNav = () => {
   const [opacity, setOpacity] = useState(0);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const closeMobileMenu = () => setMobileMenuOpen(false);
 
   const handleScroll = () => {
     const currentScroll = window.scrollY;
@@ -36,21 +37,12 @@ const FlyoutNav = () => {
           <li className="nav-item">
             <NavLink to="contact" className="nav-link">Contact</NavLink>
           </li>
-          {/* <li className="nav-item">
-            <NavLink to="blog" className="nav-link">Blog</NavLink>
-          </li> */}
           <li className="nav-item">
             <NavLink to="resume" className="nav-link">Resume</NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="skills" className="nav-link">Skills</NavLink>
           </li>
-          {/* <li className="nav-item">
-            <NavLink to="portfolio" className="nav-link">Portfolio</NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink to="faq" className="nav-link">FAQ</NavLink>
-          </li> */}
         </ul>
         <button className="mobile-menu-icon" onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
           {isMobileMenuOpen ? '✖' : '☰'}
@@ -58,15 +50,12 @@ const FlyoutNav = () => {
       </div>
       {isMobileMenuOpen && (
         <div className="mobile-menu">
-          <NavLink to="">Home</NavLink>
-          <NavLink to="experience">Services</NavLink>
-          <NavLink to="about">About</NavLink>
-          <NavLink to="contact">Contact</NavLink>
-          <NavLink to="blog">Blog</NavLink>
-          <NavLink to="resume">Resume</NavLink>
-          <NavLink to="skills">Skills</NavLink>
-          <NavLink to="portfolio">Portfolio</NavLink>
-          <NavLink to="faq">FAQ</NavLink>
+          <NavLink to="/" onClick={closeMobileMenu}>Home</NavLink>
+          <NavLink to="experience" onClick={closeMobileMenu}>Experience</NavLink>
+          <NavLink to="about" onClick={closeMobileMenu}>About</NavLink>
+          <NavLink to="contact" onClick={closeMobileMenu}>Contact</NavLink>
+          <NavLink to="resume" onClick={closeMobileMenu}>Resume</NavLink>
+          <NavLink to="skills" onClick={closeMobileMenu}>Skills</NavLink>
         </div>
       )}
     </nav>
