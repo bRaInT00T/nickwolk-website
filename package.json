@@ -1,7 +1,7 @@
 {
   "name": "nickwolk-website",
   "version": "0.1.0",
-  "homepage": "https://braint00t.github.io/nickwolk-website/#",
+  "homepage": "https://braint00t.github.io/#",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
