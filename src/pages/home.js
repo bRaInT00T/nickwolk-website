@@ -34,7 +34,7 @@ function Typewriter({ messages, heading }) {
   return (
     <h2>
       {heading} {currentText.substring(0, subIndex)}
-      <span className="cursor">|</span>
+      <span className="cursor"></span>
     </h2>
   );
 }
