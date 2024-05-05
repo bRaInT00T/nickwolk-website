@@ -27,6 +27,19 @@ p {
   color: #ffffff;
   z-index: 1;
 }
+
+label {
+  font-size: 1.5em;
+  font-family: "Bebas Neue", sans-serif;
+  color: #ffffff;
+  z-index: 1;
+}
+
+ul li {
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
 .resume-download-container {
   text-align: center;
   padding: 50px;

@@ -23,7 +23,9 @@ const FlyoutNav = () => {
     <nav className="navbar" style={{ top: 0, position: 'sticky', zIndex: 1, backgroundColor: `rgba(51, 51, 51, ${opacity})` }}> 
     {/* boxShadow: '0 2px 4px rgba(0,0,0,0.1)',  */}
       <div className="nav-content">
-        <img className="navbar-logo" id='logo' alt='NW Logo' src={Logo}/>
+        <NavLink to="">
+          <img className="navbar-logo" id='logo' alt='NW Logo' src={Logo} />
+        </NavLink>
         <ul className="nav-links">
           <li className="nav-item">
             <NavLink to="" className="nav-link">Home</NavLink>
