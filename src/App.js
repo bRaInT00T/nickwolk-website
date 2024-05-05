@@ -38,21 +38,20 @@ class App extends Component {
   render() {
     return (
       <div>
-
         <div id="particles-js"></div>
-          <FlyoutNav />
-          <Routes>
-            <Route path="" element={<HomePage />} />
-            <Route path="about" element={<AboutPage />} />
-            <Route path="experience" element={<ExperiencePage />} />
-            {/* <Route path="contact" element={<ContactPage />} /> */}
-            <Route path="portfolio" element={<PortfolioPage />} />
-            <Route path="skills" element={<SkillsPage />} />
-            <Route path="blog" element={<BlogPage />} />
-            <Route path="testimonials" element={<TestimonialsPage />} />
-            <Route path="resume" element={<ResumePage />} />
-          </Routes>
-</div> 
+        <FlyoutNav />
+        <Routes>
+          <Route path="" element={<HomePage />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="experience" element={<ExperiencePage />} />
+          {/* <Route path="contact" element={<ContactPage />} /> */}
+          <Route path="portfolio" element={<PortfolioPage />} />
+          <Route path="skills" element={<SkillsPage />} />
+          <Route path="blog" element={<BlogPage />} />
+          <Route path="testimonials" element={<TestimonialsPage />} />
+          <Route path="resume" element={<ResumePage />} />
+        </Routes>
+      </div>
     );
   }
 }
