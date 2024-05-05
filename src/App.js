@@ -6,7 +6,7 @@ import "./css/App.css";
 import HomePage from "./pages/home";
 import AboutPage from "./pages/about";
 import ExperiencePage from "./pages/experience";
-import ContactPage from "./pages/contact";
+// import ContactPage from "./pages/contact";
 import PortfolioPage from "./pages/portfolio";
 import SkillsPage from "./pages/skills";
 import BlogPage from "./pages/blog";
