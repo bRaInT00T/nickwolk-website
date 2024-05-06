@@ -28,3 +28,4 @@ setup.sh
 # Testing files
 * copy*
 *.bk*
+.eslintrc
