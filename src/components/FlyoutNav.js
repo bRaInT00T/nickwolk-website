@@ -20,25 +20,18 @@ const FlyoutNav = () => {
   }, []);
 
   return (
-    <nav className="navbar" style={{ top: 0, position: 'sticky', zIndex: 1, backgroundColor: `rgba(51, 51, 51, ${opacity})` }}> 
-    {/* boxShadow: '0 2px 4px rgba(0,0,0,0.1)',  */}
+    <nav className="navbar" style={{ top: 0, position: 'sticky', zIndex: 1, backgroundColor: `rgba(51, 51, 51, ${opacity})` }}>
       <div className="nav-content">
         <NavLink to="">
           <img className="navbar-logo" id='logo' alt='NW Logo' src={Logo} />
         </NavLink>
         <ul className="nav-links">
-          {/* <li className="nav-item">
-            <NavLink to="" className="nav-link">Home</NavLink>
-          </li> */}
           <li className="nav-item">
             <NavLink to="about" className="nav-link">About</NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="experience" className="nav-link">Experience</NavLink>
           </li>
-          {/* <li className="nav-item">
-            <NavLink to="contact" className="nav-link">Contact</NavLink>
-          </li> */}
           <li className="nav-item">
             <NavLink to="skills" className="nav-link">Skills</NavLink>
           </li>
@@ -52,10 +45,8 @@ const FlyoutNav = () => {
       </div>
       {isMobileMenuOpen && (
         <div className="mobile-menu">
-          {/* <NavLink to="/" onClick={closeMobileMenu}>Home</NavLink> */}
           <NavLink to="about" onClick={closeMobileMenu}>About</NavLink>
           <NavLink to="experience" onClick={closeMobileMenu}>Experience</NavLink>
-          {/* <NavLink to="contact" onClick={closeMobileMenu}>Contact</NavLink> */}
           <NavLink to="skills" onClick={closeMobileMenu}>Skills</NavLink>
           <NavLink to="resume" onClick={closeMobileMenu}>Resume</NavLink>
         </div>
