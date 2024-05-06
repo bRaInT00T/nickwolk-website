@@ -34,7 +34,6 @@ function Typewriter({ messages, heading }) {
   return (
     <h2>
       {heading} {currentText.substring(0, subIndex)}
-      <span className="cursor"></span>
     </h2>
   );
 }
@@ -48,7 +47,8 @@ function HomePage() {
     "Inquisitive Person",
     "Gadget Nerd",
     "Husband/Father",
-    "Tee Ball Coach/Little League Supporter",
+    "Tee Ball Coach",
+    // "Little League Supporter",
   ];
 
   return (
