@@ -87,11 +87,30 @@ img {
     visibility: hidden;
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 .typewriter-text {
-  font-family: "Gloria Hallelujah", cursive;
-  text-align: center;
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.cursor {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  animation: blink 0.7s steps(2, start) infinite;
+  border-right: 1px solid;
+  margin-left: 2px;
+}
+
+.td p {
+  padding: auto;
+  font-family: "Raleway";
+  font-weight: bold;
   font-size: 30px;
-  /* Adjust size to fit your design */
   color: #ffffff;
 }
