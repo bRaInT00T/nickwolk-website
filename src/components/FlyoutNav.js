@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import '../css/FlyoutNav.css';
 import Logo from '../assets/img_desktop.svg';
+// import { wetPaint } from './wetPaint'
+
+
 
 const FlyoutNav = () => {
   const [opacity, setOpacity] = useState(0);
@@ -36,6 +39,9 @@ const FlyoutNav = () => {
             <NavLink to="skills" className="nav-link">Skills</NavLink>
           </li>
           <li className="nav-item">
+            <NavLink to="kanban" className="nav-link">Kanban</NavLink>
+          </li>
+          <li className="nav-item">
             <NavLink to="resume" className="nav-link">Resume</NavLink>
           </li>
         </ul>
@@ -45,10 +51,10 @@ const FlyoutNav = () => {
       </div>
       {isMobileMenuOpen && (
         <div className="mobile-menu">
-          <NavLink to="about" onClick={closeMobileMenu}>About</NavLink>
-          <NavLink to="experience" onClick={closeMobileMenu}>Experience</NavLink>
-          <NavLink to="skills" onClick={closeMobileMenu}>Skills</NavLink>
-          <NavLink to="resume" onClick={closeMobileMenu}>Resume</NavLink>
+            <NavLink id="NavLink" to="about" onClick={closeMobileMenu}>About</NavLink>
+            <NavLink id="NavLink" to="experience" onClick={closeMobileMenu}>Experience</NavLink>
+            <NavLink id="NavLink" to="skills" onClick={closeMobileMenu}>Skills</NavLink>
+            <NavLink id="NavLink" to="resume" onClick={closeMobileMenu}>Resume</NavLink>
         </div>
       )}
     </nav>

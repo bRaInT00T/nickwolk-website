@@ -58,10 +58,9 @@ function Typewriter({ messages, heading, pauseDuration = 1000 }) {
 
 function HomePage() {
   const messages = [
-    "a Husband, Father, and Tee Ball Coach",
-    "a Python Developer",
-    "a Cloud Engineer",
-    "a Cloud Architect",
+    "a cloud engineer",
+    "a cloud architect",
+    "a Python developer",
     "a gadget nerd",
     "a problem solver",
     "a visionary",
@@ -82,11 +81,14 @@ function HomePage() {
     "resourceful",
     "result-oriented",
     "supportive",
+    "a Husband, Father, and Tee Ball Coach",
   ];
 
   return (
+    <div style={{marginTop: "50px", maxWidth: "800px", margin: "auto"}}>
     <div className="typewriter-text">
       <Typewriter heading="I am" messages={messages} />
+    </div>
     </div>
   );
 }

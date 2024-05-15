@@ -1,4 +1,4 @@
-.navbar {
+ .navbar {
     background-color: #333;
     color: white;
     display: flex;
@@ -119,7 +119,44 @@
       padding-top: 60px; /* Adds some spacing from the top */
       transition: all 0.3s ease-in-out;  /* Smooth transition for all changes */
     }
-  
+    .mobile-content {
+      display: flex;
+      width: 95%;      /* Ensures the menu spans the full width of the viewport */
+      height: 100vh;    /* Takes full viewport height */
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .mobile-item {
+      border-radius: 50px;
+      background-color: rgba(42, 145, 170);
+      position: relative;
+      width: 95%;
+      margin: 1px;
+      text-align: center;
+      justify-content: center; /* Centers links vertically */
+      font-size: 1.5rem;  /* Larger text for better readability */
+      padding: 20px;      /* Adds padding around the links */
+      box-sizing: border-box; /* Includes border in the total width and height */
+    }
+
+    #NavLink {
+      background: linear-gradient(145deg, rgba(180,118,4) 26%, rgba(255,216,0,1) 100%);
+      width: 90%;
+      padding: 15px;
+      margin: 1px;
+      text-align: center;
+    }
+    
+    .mobile-item a {
+      text-decoration: none;   /* Removes underline from links */
+      color: white;            /* White text for visibility */
+      font-size: 1.2rem;       /* Larger text for better readability */
+      padding: 10px;           /* Adds some padding around the links */
+      margin: 10px 0;          /* Adds vertical spacing between links */
+    }
+
     .mobile-menu a {
       text-decoration: none;   /* Removes underline from links */
       color: white;            /* White text for visibility */
@@ -128,3 +165,73 @@
       margin: 10px 0;          /* Adds vertical spacing between links */
     }
   }
+
+
+
+
+
+
+
+  /* styles.css */
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-indigo-300 {
+  color: #c3dafe;
+}
+
+.hover\:underline:hover {
+  text-decoration: underline;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-neutral-200 {
+  border-color: #edf2f7;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.transition-colors {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:bg-neutral-100:hover {
+  background-color: #f7fafc;
+}
+
+.block {
+  display: block;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}

@@ -15,8 +15,8 @@ function experience() {
   let certIconStyles = { background: "#eb8e5c" };
 
   return (
-    <div style={{ padding: '20px', margin: 'auto' }}>
-      <h1 class="title">Experience</h1>
+    <div style={{ padding: '20px', margin: 'auto', maxWidth: "1000px" }}>
+      <h1 className="title">Experience</h1>
       <VerticalTimeline>
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
