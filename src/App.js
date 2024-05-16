@@ -33,7 +33,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="no-scrollbar">
         <div id="particles-js" />
         <FlyoutNav />
         <div>

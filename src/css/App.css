@@ -1,25 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
-
-
-.App {
-  text-align: center;
-  background-attachment: fixed;
-  background-color: #2E4951;
-}
-
 h1 {
-  font-size: 3em;
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
   text-align: center;
-  font-family: "Roboto Slab", serif;
   color: #ffffff;
   z-index: 1;
   margin: auto;
 }
 
 p {
-  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   color: #ffffff;
   z-index: 1;
 }
@@ -31,28 +25,31 @@ label {
   z-index: 1;
 }
 
+.text-container {
+  padding: 20px;
+  max-width:  800px;
+  margin: auto;
+  background-color: rgb(39, 62, 71, .6);
+  border-radius: 15px;
+}
+
 ul li {
   font-size: 1.5em;
   color: #ffffff;
 }
 
 .resume-download-container {
-  background-Color: rgb(39, 62, 71, .6);
-  border-radius: 15px;
-  color: #333;
-  margin: auto;
-  max-width: 800px;
-  padding: 0px 20px;
   text-align: center;
 }
 
 .download-button {
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #0056b3;
   color: #ffffff;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 16px;
+  /* font-size: 16px; */
   font-weight: bold;
 }
 
@@ -67,15 +64,7 @@ img {
   margin: 0 auto;
 }
 
-#particles-js {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  background-color: #2E4951;
-}
+
 
 @keyframes blink {
   to {
@@ -109,3 +98,90 @@ img {
   font-size: 30px;
   color: #ffffff;
 }
+.vertical-timeline-element-date {
+  font-family: "Raleway";
+  margin-top: .2em;
+  display: block;
+  width: 100%;
+  color: #ffffff;
+
+}
+@media only screen and (max-width: 1700px) {
+  .vertical-timeline-element-date {
+    display: block;
+    float: none;
+    color: #ffffff;
+    
+  }
+}
+
+.coIcon {
+  transition: transform .5s;
+  align-items: center;
+  padding: 0;
+}
+
+.coIcon:hover {
+  transform: scale(4);
+  border-radius: 5px;
+}
+
+/* .workIcon {
+  width: 100%;
+  height: 100%;
+} */
+
+.vertical-timeline-element-content{
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.vertical-timeline-element-title {
+  font-size: 1.1em;
+  color: #3263ac;
+}
+
+.vertical-timeline-element-subtitle {
+  font-size: .9em;
+  color: #243f68;
+}
+
+/* .date {
+  color: #ffffff;
+} */
+
+#description {
+  margin: 0;
+  font-size: 1em;
+  color: black;
+}
+
+.workButton {
+  background-color: #06d6a0;
+}
+
+.workButton:hover {
+  background-color: #0ac593;
+}
+
+.schoolButton {
+  background-color: #f9c74f;
+}
+
+.schoolButton:hover {
+  background-color: #f3bc3c;
+}
+
+/* Particles */
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #2E4951;
+}
+

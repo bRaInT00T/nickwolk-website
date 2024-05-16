@@ -1,4 +1,3 @@
-import '../css/about.css';
 import React, { useEffect } from "react";
 
 function AboutPage() {
@@ -15,8 +14,8 @@ function AboutPage() {
     };
   }, []);
   return (
-    <div style={{ maxWidth: "800px", margin: "auto" }}>
-      <table className='table'>
+    <div className="text-container">
+      <table className='body'>
       <tbody>
         <tr>
           <td colSpan="100%">
