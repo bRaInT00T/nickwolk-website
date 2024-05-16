@@ -3,7 +3,8 @@
 
 h1 {
   margin: 0;
-  font: normal 75% Arial, Helvetica, sans-serif;
+  font-family: Lato, "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+  font-weight: 500;
   font-size: 2.5em;
   text-align: center;
   color: #ffffff;

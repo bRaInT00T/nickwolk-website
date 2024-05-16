@@ -9,7 +9,7 @@ const FlyoutNav = () => {
   const [opacity, setOpacity] = useState(0);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
-  
+
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
   const handleScroll = () => {
@@ -48,18 +48,18 @@ const FlyoutNav = () => {
             onMouseEnter={() => setDropdownOpen(true)} 
             onMouseLeave={() => setDropdownOpen(false)}
           >
-            <NavLink to="kanban" className="nav-link">Kanban</NavLink>
+            <div className="nav-link">Just<span style={{ color: 'yellow' }}>4</span>Fun</div>
             {isDropdownOpen && (
               <ul className="dropdown-menu">
                 <li className="dropdown-item">
-                  <NavLink to="kanban/board1" className="dropdown-link">Board 1</NavLink>
+                  <NavLink to="kanban" className="dropdown-link">Kanban Board</NavLink>
                 </li>
-                <li className="dropdown-item">
+                {/* <li className="dropdown-item">
                   <NavLink to="kanban/board2" className="dropdown-link">Board 2</NavLink>
                 </li>
                 <li className="dropdown-item">
                   <NavLink to="kanban/board3" className="dropdown-link">Board 3</NavLink>
-                </li>
+                </li> */}
               </ul>
             )}
           </li>

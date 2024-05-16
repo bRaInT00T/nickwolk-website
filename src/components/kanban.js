@@ -18,7 +18,7 @@ const Board = () => {
   return (
     <div className="flex-row-scroll">
       <Column
-        title="Backlog"
+        title="BACKLOG"
         column="backlog"
         headingColor="text-gray"
         cards={cards}
@@ -32,14 +32,14 @@ const Board = () => {
         setCards={setCards}
       />
       <Column
-        title="In progress"
+        title="IN PROGRESS"
         column="doing"
         headingColor="text-blue"
         cards={cards}
         setCards={setCards}
       />
       <Column
-        title="Complete"
+        title="COMPLETE"
         column="done"
         headingColor="text-green"
         cards={cards}

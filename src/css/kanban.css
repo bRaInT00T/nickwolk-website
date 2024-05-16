@@ -3,7 +3,7 @@
     position: fixed;
     height: 800px;
     width: 1300px;
-    background-color: #111827;
+    background-color: hsla(221, 38%, 21%, 0.795);
     /* background-color: rgb(23 23 23); */
     color: #f9fafb; /* light text */
     border-radius: 1rem;
@@ -132,13 +132,6 @@
     align-items: center; 
 }
 
-.kheader {
-    border-radius: 0.25rem; 
-    font-size: 0.875rem;
-    line-height: 1.25rem; 
-    color: #9ca3af;
-}
-
 .colActive {
     height: 600px;
     width: 100%;
@@ -157,24 +150,35 @@
     background-color: transparent;
 }
 
-.text-gray {
+.text-gray, .text-yellow, .text-green, .text-blue {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
     font-weight: 500;
+    width: 100%;
+}
+
+.text-gray {
     color: rgb(115 115 115);
 }
 
 .text-yellow {
-    font-weight: 500;
     color: rgb(254 240 138);
 }
 
 .text-blue {
-    font-weight: 500;
     color: rgb(191 219 254);
 }
 
 .text-green {
-    font-weight: 500;
     color: rgb(167 243 208);
+}
+
+.kheader {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0.25rem; 
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+    color: #9ca3af;
 }
 
 .form-button {
