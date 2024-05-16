@@ -4,8 +4,12 @@ import {CustomKanban} from '../components/kanban.js';
 
 function KanbanBoard() {
     return (
-        <div style={{ padding: "20px", margin: "auto", justifyContent: "center", display: "Flex" }}>
-            <CustomKanban />
+        <div>
+            <h1>Daily Scrum</h1>
+            <div style={{ padding: "20px", margin: "auto", justifyContent: "center", display: "Flex" }}>
+            
+                <CustomKanban />
+            </div>
         </div>
     );
 }

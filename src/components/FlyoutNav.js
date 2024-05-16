@@ -35,13 +35,16 @@ const FlyoutNav = () => {
         </NavLink>
         <ul className="nav-links">
           <li className="nav-item">
-            <NavLink to="about" className="nav-link">About</NavLink>
+            <NavLink to="about" className="nav-link">About Me</NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="experience" className="nav-link">Experience</NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="skills" className="nav-link">Skills</NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="resume" className="nav-link">Resume</NavLink>
           </li>
           <li 
             className="nav-item dropdown" 
@@ -62,9 +65,6 @@ const FlyoutNav = () => {
                 </li> */}
               </ul>
             )}
-          </li>
-          <li className="nav-item">
-            <NavLink to="resume" className="nav-link">Resume</NavLink>
           </li>
         </ul>
         <button className="mobile-menu-icon" onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
