@@ -1,16 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
-body {
-  margin: 0;
-  /* font-style: normal; */
-  font: normal 75% Arial, Helvetica, sans-serif;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: #2E4951;
-  color: #ffffff;
-}
+
 
 .App {
   text-align: center;
@@ -24,6 +15,7 @@ h1 {
   font-family: "Roboto Slab", serif;
   color: #ffffff;
   z-index: 1;
+  margin: auto;
 }
 
 p {
@@ -45,10 +37,13 @@ ul li {
 }
 
 .resume-download-container {
-  text-align: center;
-  padding: 20px;
+  background-Color: rgb(39, 62, 71, .6);
+  border-radius: 15px;
   color: #333;
-  margin: 'auto'
+  margin: auto;
+  max-width: 800px;
+  padding: 0px 20px;
+  text-align: center;
 }
 
 .download-button {

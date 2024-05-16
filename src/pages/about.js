@@ -16,7 +16,7 @@ function AboutPage() {
   }, []);
   return (
     <div style={{ maxWidth: "800px", margin: "auto" }}>
-      <table>
+      <table className='table'>
       <tbody>
         <tr>
           <td colSpan="100%">
