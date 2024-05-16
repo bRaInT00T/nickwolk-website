@@ -1,31 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
-
-body {
-  margin: 0;
-  font: normal 75% Arial, Helvetica, sans-serif;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: #2E4951;
-  color: #ffffff;
-}
-
-.App {
-  text-align: center;
-  background-attachment: fixed;
-  background-color: #2E4951;
-}
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 h1 {
-  font-size: 3em;
+  margin: 0;
+  font-family: Lato, "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 2.5em;
   text-align: center;
-  font-family: "Roboto Slab", serif;
   color: #ffffff;
   z-index: 1;
+  margin: auto;
 }
+
 p {
-  font-size: 1.5em;
-  font-family: "Roboto Slab", serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   color: #ffffff;
   z-index: 1;
 }
@@ -37,6 +26,14 @@ label {
   z-index: 1;
 }
 
+.text-container {
+  padding: 20px;
+  max-width:  800px;
+  margin: auto;
+  background-color: rgb(39, 62, 71, .6);
+  border-radius: 15px;
+}
+
 ul li {
   font-size: 1.5em;
   color: #ffffff;
@@ -44,19 +41,16 @@ ul li {
 
 .resume-download-container {
   text-align: center;
-  padding: 20px;
-  color: #333;
-  /* max-Width: 800px; */
-  margin: 'auto'
 }
 
 .download-button {
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #0056b3;
   color: #ffffff;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 16px;
+  /* font-size: 16px; */
   font-weight: bold;
 }
 
@@ -69,9 +63,118 @@ img {
   width: 50px;
   height: 50px;
   margin: 0 auto;
-  /* border-radius: 10px;
-  border: 1px solid black; */
 }
+
+
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+.typewriter-text {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.cursor {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  animation: blink 0.7s steps(2, start) infinite;
+  border-right: 1px solid;
+  margin-left: 2px;
+}
+
+.td p {
+  padding: auto;
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 30px;
+  color: #ffffff;
+}
+.vertical-timeline-element-date {
+  font-family: "Raleway";
+  margin-top: .2em;
+  display: block;
+  width: 100%;
+  color: #ffffff;
+
+}
+@media only screen and (max-width: 1700px) {
+  .vertical-timeline-element-date {
+    display: block;
+    float: none;
+    color: #ffffff;
+    
+  }
+}
+
+.coIcon {
+  transition: transform .5s;
+  align-items: center;
+  padding: 0;
+}
+
+.coIcon:hover {
+  transform: scale(4);
+  border-radius: 5px;
+}
+
+/* .workIcon {
+  width: 100%;
+  height: 100%;
+} */
+
+.vertical-timeline-element-content{
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.vertical-timeline-element-title {
+  font-size: 1.1em;
+  color: #3263ac;
+}
+
+.vertical-timeline-element-subtitle {
+  font-size: .9em;
+  color: #243f68;
+}
+
+/* .date {
+  color: #ffffff;
+} */
+
+#description {
+  margin: 0;
+  font-size: 1em;
+  color: black;
+}
+
+.workButton {
+  background-color: #06d6a0;
+}
+
+.workButton:hover {
+  background-color: #0ac593;
+}
+
+.schoolButton {
+  background-color: #f9c74f;
+}
+
+.schoolButton:hover {
+  background-color: #f3bc3c;
+}
+
+/* Particles */
 
 #particles-js {
   position: fixed;
@@ -83,28 +186,3 @@ img {
   background-color: #2E4951;
 }
 
-
-@keyframes blink {
-  to {
-    visibility: hidden;
-  }
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-@import url('https://fonts.cdnfonts.com/css/modern-typewriter');
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
-.typewriter-text {
-  /* font-family: "Courier New", system-ui; */
-  /* font-family: "MODERN TYPEWRITER", sans-serif; */
-  font-family: "Gloria Hallelujah", cursive;
-  text-align: center;
-  font-size: 30px; /* Adjust size to fit your design */
-  color: #ffffff;
-}
-
-.cursor {
-  font-family: "Gloria Hallelujah", cursive;
-  animation: blink 0.7s steps(2, start) infinite;
-  border-right: 1px solid;
-  margin-left: 2px;
-}

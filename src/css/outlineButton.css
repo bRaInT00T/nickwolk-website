@@ -1,0 +1,79 @@
+.button {
+    position: relative; 
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    font-weight: 500; 
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms; 
+    color: rgb(241 245 249);
+}
+
+.button:hover {
+ color: #A5B4FC; 
+ }
+
+
+.top {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 0; 
+    background-color: #A5B4FC; 
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms; 
+    transition-duration: 100ms; 
+    height: 2px;
+}
+
+.right {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    height: 0; 
+    background-color: #A5B4FC; 
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms; 
+    transition-duration: 100ms; 
+    transition-delay: 100ms; 
+    width: 2px;
+}
+
+.bottom {
+    position: absolute; 
+    right: 0; 
+    bottom: 0; 
+    width: 0; 
+    background-color: #A5B4FC; 
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms; 
+    transition-duration: 100ms; 
+    transition-delay: 200ms; 
+    height: 2px;
+}
+
+.left {
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    height: 0; 
+    background-color: #A5B4FC; 
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms; 
+    transition-duration: 100ms; 
+    transition-delay: 300ms; 
+    width: 2px;
+}
+
+.outlineButton {
+    background-color: rgb(15 23 42);
+    display: grid;
+    padding: 1rem; 
+    place-content: center; 
+}

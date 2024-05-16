@@ -85,7 +85,7 @@ function ContactPage() {
       </table>
       {/* <div style={{ marginRight: "auto", marginLeft: "auto", maxwidth: "fit-content"}} > */}
       <div
-        class="badge-base LI-profile-badge"
+        className="badge-base LI-profile-badge"
         data-locale="en_US"
         data-size="medium"
         data-theme="dark"

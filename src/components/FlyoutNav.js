@@ -3,9 +3,13 @@ import { NavLink } from "react-router-dom";
 import '../css/FlyoutNav.css';
 import Logo from '../assets/img_desktop.svg';
 
+
+
 const FlyoutNav = () => {
   const [opacity, setOpacity] = useState(0);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
   const handleScroll = () => {
@@ -20,27 +24,44 @@ const FlyoutNav = () => {
   }, []);
 
   return (
-    <nav className="navbar" style={{ top: 0, position: 'sticky', zIndex: 1, backgroundColor: `rgba(51, 51, 51, ${opacity})` }}> 
-    {/* boxShadow: '0 2px 4px rgba(0,0,0,0.1)',  */}
+    <nav className="navbar" style={{ top: 0, position: 'sticky', zIndex: 1, backgroundColor: `rgba(51, 51, 51, ${opacity})` }}>
       <div className="nav-content">
         <NavLink to="">
+        <div className='navbar-logo-card'>
+        <div className='navbar-logo-card-inner'>
           <img className="navbar-logo" id='logo' alt='NW Logo' src={Logo} />
+          </div>
+          </div>
         </NavLink>
         <ul className="nav-links">
-          {/* <li className="nav-item">
-            <NavLink to="" className="nav-link">Home</NavLink>
-          </li> */}
           <li className="nav-item">
             <NavLink to="about" className="nav-link">About</NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="experience" className="nav-link">Experience</NavLink>
           </li>
-          {/* <li className="nav-item">
-            <NavLink to="contact" className="nav-link">Contact</NavLink>
-          </li> */}
           <li className="nav-item">
             <NavLink to="skills" className="nav-link">Skills</NavLink>
+          </li>
+          <li 
+            className="nav-item dropdown" 
+            onMouseEnter={() => setDropdownOpen(true)} 
+            onMouseLeave={() => setDropdownOpen(false)}
+          >
+            <div className="nav-link">Just<span style={{ color: 'yellow' }}>4</span>Fun</div>
+            {isDropdownOpen && (
+              <ul className="dropdown-menu">
+                <li className="dropdown-item">
+                  <NavLink to="kanban" className="dropdown-link">Kanban Board</NavLink>
+                </li>
+                {/* <li className="dropdown-item">
+                  <NavLink to="kanban/board2" className="dropdown-link">Board 2</NavLink>
+                </li>
+                <li className="dropdown-item">
+                  <NavLink to="kanban/board3" className="dropdown-link">Board 3</NavLink>
+                </li> */}
+              </ul>
+            )}
           </li>
           <li className="nav-item">
             <NavLink to="resume" className="nav-link">Resume</NavLink>
@@ -52,12 +73,10 @@ const FlyoutNav = () => {
       </div>
       {isMobileMenuOpen && (
         <div className="mobile-menu">
-          {/* <NavLink to="/" onClick={closeMobileMenu}>Home</NavLink> */}
-          <NavLink to="about" onClick={closeMobileMenu}>About</NavLink>
-          <NavLink to="experience" onClick={closeMobileMenu}>Experience</NavLink>
-          {/* <NavLink to="contact" onClick={closeMobileMenu}>Contact</NavLink> */}
-          <NavLink to="skills" onClick={closeMobileMenu}>Skills</NavLink>
-          <NavLink to="resume" onClick={closeMobileMenu}>Resume</NavLink>
+            <NavLink id="NavLink" to="about" onClick={closeMobileMenu}>About</NavLink>
+            <NavLink id="NavLink" to="experience" onClick={closeMobileMenu}>Experience</NavLink>
+            <NavLink id="NavLink" to="skills" onClick={closeMobileMenu}>Skills</NavLink>
+            <NavLink id="NavLink" to="resume" onClick={closeMobileMenu}>Resume</NavLink>
         </div>
       )}
     </nav>

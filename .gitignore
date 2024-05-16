@@ -29,3 +29,4 @@ setup.sh
 * copy*
 *.bk*
 .eslintrc
+src/test

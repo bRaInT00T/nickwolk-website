@@ -1,63 +1,94 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 
-function Typewriter({ messages, heading }) {
-  const [index, setIndex] = useState(0);
-  const [subIndex, setSubIndex] = useState(0);
-  const [reverse, setReverse] = useState(false);
-  const timeoutRef = useRef(null);
+function Typewriter({ messages, heading, pauseDuration = 1000 }) {
+  const [index, setIndex] = useState(0); // Index of the current message
+  const [subIndex, setSubIndex] = useState(0); // Index of the sub-character
+  const [reverse, setReverse] = useState(false); // Whether we are in reverse mode
+  const [pauseBefore, setPauseBefore] = useState(true); // Pause before starting to type
+  const [pauseAfter, setPauseAfter] = useState(false); // Pause after a message is typed
   const currentText = messages[index];
 
   useEffect(() => {
-    if (subIndex === currentText.length + 1 && !reverse) {
-      timeoutRef.current = setTimeout(() => setReverse(true), 1500);
-      return;
-    }
+    let timeout;
 
-    if (subIndex === 0 && reverse) {
-      timeoutRef.current = setTimeout(() => {
+    if (pauseBefore) {
+      timeout = setTimeout(() => {
+        setPauseBefore(false);
+      }, pauseDuration);
+    } else if (pauseAfter) {
+      timeout = setTimeout(() => {
+        setPauseAfter(false);
+        setReverse(true);
+      }, pauseDuration + 1000);
+    } else if (reverse) {
+      if (subIndex > 0) {
+        // Check if the remaining substring matches the start of the next message
+        const nextIndex = (index + 1) % messages.length;
+        const nextMessageStart = messages[nextIndex].slice(0, subIndex);
+        if (messages[index].slice(0, subIndex) === nextMessageStart) {
+          setReverse(false);
+          setIndex(nextIndex);
+          setPauseBefore(true); // Set pause before starting the next message
+        } else {
+          setTimeout(() => setSubIndex(subIndex - 1), 100);
+        }
+      } else {
         setReverse(false);
         setIndex((prev) => (prev + 1) % messages.length);
-      }, 500);
-      return;
+        setPauseBefore(true); // Set pause before starting the next message
+      }
+    } else {
+      if (subIndex < messages[index].length) {
+        timeout = setTimeout(() => setSubIndex(subIndex + 1), 100);
+      } else {
+        setPauseAfter(true); // Set pause after completing the message
+      }
     }
 
-    timeoutRef.current = setTimeout(
-      () => {
-        setSubIndex((prev) => prev + (reverse ? -1 : 1));
-      },
-      reverse ? 100 : 100
-    );
-
-    return () => clearTimeout(timeoutRef.current);
-  }, [subIndex, reverse, index, currentText.length, messages.length]);
+    return () => clearTimeout(timeout);
+  }, [subIndex, reverse, index, messages, pauseBefore, pauseAfter, pauseDuration]);
 
   return (
-    <h2>
+    <div>
       {heading} {currentText.substring(0, subIndex)}
-      <span className="cursor"></span>
-    </h2>
+      <span className="cursor">_</span>
+    </div>
   );
 }
 
 function HomePage() {
   const messages = [
-    "Python Developer",
-    "Cloud Engineer",
-    "Cloud Architect",
-    "Automation Enthusiast",
-    "Inquisitive Person",
-    "Gadget Nerd",
-    "Husband/Father",
-    "Tee Ball Coach/Little League Supporter",
+    "a cloud engineer",
+    "a cloud architect",
+    "a Python developer",
+    "a gadget nerd",
+    "a problem solver",
+    "a visionary",
+    "adaptable",
+    "always learning",
+    "an automation enthusiast",
+    "an effective communicator",
+    "analytical",
+    "collaborative",
+    "creative",
+    "customer-centric",
+    "dedicated",
+    "innovative",
+    "innovative",
+    "inquisitive",
+    "insightful",
+    "resilient",
+    "resourceful",
+    "result-oriented",
+    "supportive",
+    "a Husband, Father, and Tee Ball Coach",
   ];
 
   return (
-    <div style={{ padding: "20px", maxWidth: "800px", margin: "auto" }}>
-      {/* <h1>NickWolk.com</h1> */}
-      {/* <p>This is the home page. Explore more about my professional and personal journey!</p> */}
-      <div className="typewriter-text">
-        <Typewriter heading="I am a" messages={messages} />
-      </div>
+    <div style={{marginTop: "50px", maxWidth: "800px", margin: "auto"}}>
+    <div className="typewriter-text">
+      <Typewriter heading="I am" messages={messages} />
+    </div>
     </div>
   );
 }

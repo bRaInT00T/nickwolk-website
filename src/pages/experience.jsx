@@ -15,8 +15,8 @@ function experience() {
   let certIconStyles = { background: "#eb8e5c" };
 
   return (
-    <div style={{ padding: '20px', margin: 'auto' }}>
-      <h1 class="title">Experience</h1>
+    <div>
+      <h1 className="title">Experience</h1>
       <VerticalTimeline>
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
@@ -36,16 +36,17 @@ function experience() {
               key={element.id}
               date={element.date}
               dateClassName="date"
+              className="vertical-timeline-element"
               iconStyle={isWorkIcon ? workIconStyles : isSchoolIcon ? schoolIconStyles : isCertIcon ? certIconStyles : {}}
               icon={isWorkIcon ? <WorkIcon /> : isSchoolIcon ? <SchoolIcon /> : isCertIcon ? <CertIcon /> : <WorkIcon />}
             >
-              <table cellPadding="0">
+              <table>
                 <tbody>
                 <tr>
                   <td>
                     {showlogo && (
                       <a href={element.link} target="_blank" rel="noopener noreferrer">
-                        <div className="icon">
+                        <div>
                           <img
                             className="coIcon"
                             src={element.logo}

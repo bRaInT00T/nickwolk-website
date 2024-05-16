@@ -1,0 +1,64 @@
+.item00 {
+    position: relative; 
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem; 
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    border-radius: 0.25rem; 
+    font-weight: 600; 
+    color: #ffffff; 
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms; 
+}
+
+.item01 {
+    position: absolute; 
+    transform-origin: top; 
+    top: 99%;
+}
+
+.item02 {
+    border-bottom-right-radius: 9999px;
+    border-bottom-left-radius: 9999px; 
+    width: 0.5rem; 
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms; 
+}
+
+.item03 {
+    position: absolute; 
+    top: 0; 
+    left: 100%; 
+}
+
+.item04 {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms; 
+}
+
+.item05 {
+    position: absolute; 
+    top: 100%; 
+    border-radius: 9999px; 
+    width: 0.5rem; 
+    height: 0.5rem; 
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms; 
+}
+
+.item0 {
+    display: grid;
+    padding: 1rem; 
+    place-content: center; 
+}
+
+.item06 {
+    position: absolute; 
+    top: 0; 
+    right: 100%; 
+    --transform-rotate: 90deg; 
+}
