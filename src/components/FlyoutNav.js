@@ -4,7 +4,7 @@ import { FiChevronDown } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 import '../css/FlyoutNav.css';
 import Logo from '../assets/img_desktop.svg';
-import { FiArrowRight, FiHome, FiBarChart2, FiPieChart } from 'react-icons/fi';
+// import { FiArrowRight, FiHome, FiBarChart2, FiPieChart } from 'react-icons/fi';
 
 
 const FlyoutNav = () => {
@@ -136,24 +136,24 @@ const Nub = ({ selected }) => {
   const [left, setLeft] = useState(0);
 
   useEffect(() => {
+    const moveNub = () => {
+      if (selected) {
+        const hoveredTab = document.getElementById(`shift-tab-${selected}`);
+        const overlayContent = document.getElementById("overlay-content");
+
+        if (!hoveredTab || !overlayContent) return;
+
+        const tabRect = hoveredTab.getBoundingClientRect();
+        const { left: contentLeft } = overlayContent.getBoundingClientRect();
+
+        const tabCenter = tabRect.left + tabRect.width / 2 - contentLeft;
+
+        setLeft(tabCenter);
+      }
+    };
+
     moveNub();
   }, [selected]);
-
-  const moveNub = () => {
-    if (selected) {
-      const hoveredTab = document.getElementById(`shift-tab-${selected}`);
-      const overlayContent = document.getElementById("overlay-content");
-
-      if (!hoveredTab || !overlayContent) return;
-
-      const tabRect = hoveredTab.getBoundingClientRect();
-      const { left: contentLeft } = overlayContent.getBoundingClientRect();
-
-      const tabCenter = tabRect.left + tabRect.width / 2 - contentLeft;
-
-      setLeft(tabCenter);
-    }
-  };
 
   return (
     <motion.span
