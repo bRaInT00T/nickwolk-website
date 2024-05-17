@@ -30,7 +30,7 @@ label {
   padding: 20px;
   max-width:  800px;
   margin: auto;
-  background-color: rgb(39, 62, 71, .6);
+  background-color: rgba(18, 25, 43, 0.834);
   border-radius: 15px;
 }
 
@@ -183,6 +183,6 @@ img {
   left: 0;
   bottom: 0;
   z-index: -1;
-  background-color: #2E4951;
+  background-color: rgb(17, 24, 39);
 }
 
