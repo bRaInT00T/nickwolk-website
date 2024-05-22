@@ -146,4 +146,3 @@ const mediaItems = [
     type: "image",
   },
 ];
-  

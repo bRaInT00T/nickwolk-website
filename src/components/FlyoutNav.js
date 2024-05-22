@@ -4,8 +4,6 @@ import { FiChevronDown } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 import '../css/FlyoutNav.css';
 import Logo from '../assets/img_desktop.svg';
-// import { FiArrowRight, FiHome, FiBarChart2, FiPieChart } from 'react-icons/fi';
-
 
 const FlyoutNav = () => {
   const [opacity, setOpacity] = useState(0);
@@ -29,6 +27,10 @@ const FlyoutNav = () => {
       setDir(null);
     }
     setSelected(val);
+  };
+
+  const handleLinkClick = () => {
+    setDropdownOpen(false);
   };
 
   useEffect(() => {
@@ -59,9 +61,9 @@ const FlyoutNav = () => {
           <li className="nav-item">
             <NavLink to="resume" className="nav-link">Resume</NavLink>
           </li>
-          <li 
-            className="nav-item dropdown" 
-            onMouseEnter={() => setDropdownOpen(true)} 
+          <li
+            className="nav-item dropdown"
+            onMouseEnter={() => setDropdownOpen(true)}
             onMouseLeave={() => setDropdownOpen(false)}
           >
             <button
@@ -77,7 +79,7 @@ const FlyoutNav = () => {
             </button>
             {isDropdownOpen && (
               <AnimatePresence>
-                {selected && <Content dir={dir} selected={selected} />}
+                {selected && <Content dir={dir} selected={selected} handleLinkClick={handleLinkClick} />}
               </AnimatePresence>
             )}
           </li>
@@ -99,7 +101,7 @@ const FlyoutNav = () => {
   );
 };
 
-const Content = ({ selected, dir }) => {
+const Content = ({ selected, dir, handleLinkClick }) => {
   return (
     <motion.div
       id="overlay-content"
@@ -119,7 +121,7 @@ const Content = ({ selected, dir }) => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.25, ease: "easeInOut" }}
             >
-              <t.Component />
+              <t.Component handleLinkClick={handleLinkClick} />
             </motion.div>
           )}
         </div>
@@ -165,12 +167,12 @@ const Nub = ({ selected }) => {
   );
 };
 
-const Products = () => (
+const Products = ({handleLinkClick}) => (
   <div>
     <div className="products-container">
       <div>
         <h3 className="products-section-title">React</h3>
-        <NavLink to="kanban" className="products-link">Kanban</NavLink>
+        <NavLink to="kanban" className="products-link" onClick={handleLinkClick}>Kanban</NavLink>
       </div>
       {/* <div>
         <h3 className="products-section-title">Scaleup</h3>

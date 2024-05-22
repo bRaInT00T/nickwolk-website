@@ -33,10 +33,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className="no-scrollbar">
+      <div>
         <div id="particles-js" />
         <FlyoutNav />
-        <div>
+        <div style={{paddingTop: "20px"}}>
           <Routes>
             <Route path="" element={<HomePage />} />
             <Route path="about" element={<AboutPage />} />
