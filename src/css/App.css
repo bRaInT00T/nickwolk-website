@@ -64,7 +64,70 @@ img {
   margin: 0 auto;
 }
 
+/* .fun {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+} */
+/* Text Effects */
 
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    text-shadow: 0 0 10px #ff6347, 0 0 20px #ff6347, 0 0 30px #ff6347;
+  }
+  50% {
+    text-shadow: 0 0 20px #ff6347, 0 0 30px #ff6347, 0 0 40px #ff6347;
+  }
+  100% {
+    text-shadow: 0 0 10px #ff6347, 0 0 20px #ff6347, 0 0 30px #ff6347;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 1px 1px #ff00c1, -1px -1px #00fff9;
+    transform: translate(0);
+  }
+  20% {
+    text-shadow: 1px -1px #ff00c1, -1px 1px #00fff9;
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    text-shadow: -1px 1px #ff00c1, 1px -1px #00fff9;
+    transform: translate(2px, -2px);
+  }
+  60% {
+    text-shadow: -1px -1px #ff00c1, 1px 1px #00fff9;
+    transform: translate(0);
+  }
+  80% {
+    text-shadow: 1px 1px #ff00c1, -1px -1px #00fff9;
+    transform: translate(-2px, 2px);
+  }
+  100% {
+    text-shadow: -1px -1px #ff00c1, 1px 1px #00fff9;
+    transform: translate(2px, -2px);
+  }
+}
+
+.fun {
+  display: inline-block;
+  /* animation: pulse 1.5s infinite; */
+  /* animation: blink 1s step-end infinite; */
+  /* transition: transform 0.3s ease-in-out; */
+}
+
+.navButton:hover .fun {
+  /* transform: rotate(360deg); */
+  animation: glitch 0.5s infinite;
+  color: yellow;
+  transform: rotate(360deg) scale(4);
+}
 
 @keyframes blink {
   to {
@@ -73,13 +136,6 @@ img {
 }
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
-.typewriter-text {
-  font-family: "Special Elite", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 40px;
-  color: #ffffff;
-}
 
 .cursor {
   font-family: "Special Elite", system-ui;
@@ -161,17 +217,17 @@ img {
   background-color: #06d6a0;
 }
 
-.workButton:hover {
+/* .workButton:hover {
   background-color: #0ac593;
-}
+} */
 
 .schoolButton {
   background-color: #f9c74f;
 }
 
-.schoolButton:hover {
+/* .schoolButton:hover {
   background-color: #f3bc3c;
-}
+} */
 
 /* Particles */
 

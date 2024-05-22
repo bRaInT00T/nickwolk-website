@@ -39,7 +39,8 @@ function HomePage() {
     "  - Father",
     "  - Tee Ball Coach",
     "EOF",
-    "$ cat ./NickWolk.yml >> YourCompany.yml",
+    "$ sudo cat ./NickWolk.yml >> YourCompany.yml",
+    "$ ",
   ];
 
   const terminalBodyRef = useRef(null);

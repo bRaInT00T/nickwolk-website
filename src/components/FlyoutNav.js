@@ -72,7 +72,7 @@ const FlyoutNav = () => {
               onClick={() => handleSetSelected(1)}
               className="navButton nav-link"
             >
-              <span>Just<span style={{color:'yellow'}}>4</span>Fun</span>
+              <span>Just<span className='fun'>4</span>Fun</span>
               <FiChevronDown
                 className={`transition-transform ${selected === 1 ? "rotate-180" : ""}`}
               />
