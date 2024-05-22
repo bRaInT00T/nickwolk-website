@@ -31,7 +31,7 @@ const FlyoutNav = () => {
 
   const handleLinkClick = () => {
     setDropdownOpen(false);
-  };  
+  };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -61,9 +61,9 @@ const FlyoutNav = () => {
           <li className="nav-item">
             <NavLink to="resume" className="nav-link">Resume</NavLink>
           </li>
-          <li 
-            className="nav-item dropdown" 
-            onMouseEnter={() => setDropdownOpen(true)} 
+          <li
+            className="nav-item dropdown"
+            onMouseEnter={() => setDropdownOpen(true)}
             onMouseLeave={() => setDropdownOpen(false)}
           >
             <button

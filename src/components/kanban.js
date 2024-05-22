@@ -11,7 +11,7 @@ export const CustomKanban = () => {
     </div>
   );
 };
-    
+
 const Board = () => {
   const [cards, setCards] = useState(DEFAULT_CARDS);
 
