@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from "react";
 import '../css/Terminal.css';
 
+function checkTime(i) {
+  if (i < 10) {
+      i = "0" + i;
+  }
+  return i;
+}
+
 function Typewriter({ messages, heading, terminalBodyRef, pauseDuration = 750 }) {
   const [currentText, setCurrentText] = useState(""); // Current text being displayed
   const [index, setIndex] = useState(0); // Index of the current message
@@ -51,7 +58,9 @@ function Typewriter({ messages, heading, terminalBodyRef, pauseDuration = 750 })
   }, [subIndex, index, messages, pauseBefore, pauseAfter, pauseDuration, terminalBodyRef, allMessagesWritten]);
 
   const date = new Date();
-  const showTime = date.getHours() + ':' + date.getMinutes();
+  const h = checkTime(date.getHours());
+  const m = checkTime(date.getMinutes());
+  const showTime = h + ":" + m;
   const pwd = "~/src/reactjs/nickwolk";
   const branch = "develop";
   const ahead = "↑3";
