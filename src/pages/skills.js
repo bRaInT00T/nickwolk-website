@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/SkillsPage.css';
-import { FaPython, FaAws, FaGitAlt, FaLinux, FaJava, FaJsSquare, FaDatabase, FaNetworkWired, FaCloud } from 'react-icons/fa';
+import { FaPython, FaGitAlt, FaLinux, FaNetworkWired, FaCloud } from 'react-icons/fa';
 import { DiVisualstudio, DiJira } from 'react-icons/di';
 import { SiTableau } from "react-icons/si";
 import { MdOutlineAutoMode, MdMonitorHeart } from "react-icons/md";
@@ -9,6 +9,7 @@ import { RiSkullLine } from "react-icons/ri";
 import { TbLambda } from "react-icons/tb";
 import { BiBookContent } from "react-icons/bi";
 import { BsMotherboard } from "react-icons/bs";
+import BubbleText from "../components/BubbleText.js";
 
 const skills = [
   {
@@ -96,7 +97,7 @@ const skills = [
 function SkillsPage() {
   return (
     <div className="skills-container">
-      <h1>My Skills</h1>
+      <BubbleText initialText="My Skills" headingLevel="h1" />
       <div className="skills-grid">
         {skills.map((skillCategory, index) => (
           <div className="skill-card" key={index}>
