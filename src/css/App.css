@@ -1,6 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  /* Adding padding-bottom to ensure space for the footer */
+  padding-bottom: 50px;
+  box-sizing: border-box; /* Ensure padding is included in height */
+}
+
 h1 {
   font-family: Lato, "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
   font-weight: 500;

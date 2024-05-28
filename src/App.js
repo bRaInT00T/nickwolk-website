@@ -9,8 +9,8 @@ import SkillsPage from "./pages/skills";
 import ResumePage from "./pages/resume";
 import KanbanBoard from "./pages/kanbanBoard";
 import "./css/App.css";
-
 import FlyoutNav from "./components/FlyoutNav";
+import Footer from "./components/Footer";
 
 class App extends Component {
   constructor(props) {
@@ -33,7 +33,8 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div id="root">
+      <main>
         <div id="particles-js" />
         <FlyoutNav />
         <div style={{paddingTop: "20px"}}>
@@ -46,6 +47,8 @@ class App extends Component {
             <Route path="kanban" element={<KanbanBoard />} />
           </Routes>
         </div>
+      </main>
+        <Footer username="bRaInT00T" repo="nickwolk-website" />
       </div>
     );
   }
