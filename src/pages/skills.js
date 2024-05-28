@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/SkillsPage.css';
-import { FaPython, FaAws, FaGitAlt, FaLinux, FaJava, FaJsSquare, FaDatabase, FaNetworkWired, FaCloud } from 'react-icons/fa';
+import { FaPython, FaGitAlt, FaLinux, FaNetworkWired, FaCloud } from 'react-icons/fa';
 import { DiVisualstudio, DiJira } from 'react-icons/di';
 import { SiTableau } from "react-icons/si";
 import { MdOutlineAutoMode, MdMonitorHeart } from "react-icons/md";
