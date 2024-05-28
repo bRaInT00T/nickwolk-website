@@ -3,6 +3,7 @@ import { ReactComponent as WorkIcon } from "../assets/work.svg";
 import { ReactComponent as SchoolIcon } from "../assets/school.svg";
 import { ReactComponent as CertIcon } from "../assets/cert.svg";
 import timelineElements from "../components/timelineElements";
+import BubbleText from "../components/BubbleText.js";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -16,7 +17,8 @@ function experience() {
 
   return (
     <div>
-      <h1 className="title">Experience</h1>
+      <h1 className="title"></h1>
+      <BubbleText initialText="Experience" headingLevel="h1" />
       <VerticalTimeline>
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";

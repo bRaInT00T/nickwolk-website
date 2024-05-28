@@ -9,6 +9,7 @@ import { RiSkullLine } from "react-icons/ri";
 import { TbLambda } from "react-icons/tb";
 import { BiBookContent } from "react-icons/bi";
 import { BsMotherboard } from "react-icons/bs";
+import BubbleText from "../components/BubbleText.js";
 
 const skills = [
   {
@@ -96,7 +97,7 @@ const skills = [
 function SkillsPage() {
   return (
     <div className="skills-container">
-      <h1>My Skills</h1>
+      <BubbleText initialText="My Skills" headingLevel="h1" />
       <div className="skills-grid">
         {skills.map((skillCategory, index) => (
           <div className="skill-card" key={index}>

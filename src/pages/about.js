@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import BubbleText from "../components/BubbleText.js";
 
 function AboutPage() {
   useEffect(() => {
@@ -19,9 +20,7 @@ function AboutPage() {
       <tbody>
         <tr>
           <td colSpan="100%">
-            <h1>
-              About Nicholas Wolk
-            </h1>
+            <BubbleText initialText="About Nicholas Wolk" headingLevel="h1" />
           </td>
         </tr>
         <tr>

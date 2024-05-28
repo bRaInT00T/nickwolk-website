@@ -1,5 +1,6 @@
 // Adding a simple contact form within your ContactPage component
 import React, { useEffect } from "react";
+import BubbleText from "../components/BubbleText.js";
 
 function ContactForm() {
   const handleSubmit = (event) => {
@@ -46,7 +47,7 @@ function ContactForm() {
 function ContactPage() {
   return (
     <div style={{ padding: "20px", maxWidth: "600px", margin: "auto" }}>
-      <h1>Contact Me</h1>
+      <BubbleText initialText="Contact Me" headingLevel="h1" />
       <table>
         <tr>
           <td>
