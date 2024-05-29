@@ -1,4 +1,3 @@
-import "../css/experience.css";
 import { ReactComponent as WorkIcon } from "../assets/work.svg";
 import { ReactComponent as SchoolIcon } from "../assets/school.svg";
 import { ReactComponent as CertIcon } from "../assets/cert.svg";
