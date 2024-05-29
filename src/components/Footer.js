@@ -37,10 +37,10 @@ const Footer = ({ username, repo }) => {
         <p>Last Commit: {lastCommitDate}</p>
       </div>
       <div className="footer-right">
-        <a href={`https://github.com/${username}/${repo}`} target="_blank" rel="noopener noreferrer">
+        <a href={`https://github.com/${username}`} target="_blank" rel="noopener noreferrer">
           <FaGithub size={24} />
         </a>
-        <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/nicholaswolk" target="_blank" rel="noopener noreferrer">
           <FaLinkedin size={24} />
         </a>
       </div>

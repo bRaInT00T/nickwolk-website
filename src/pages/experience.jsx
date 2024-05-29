@@ -17,7 +17,6 @@ function experience() {
 
   return (
     <div>
-      <h1 className="title"></h1>
       <BubbleText initialText="Experience" headingLevel="h1" />
       <VerticalTimeline>
         {timelineElements.map((element) => {
