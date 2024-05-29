@@ -1,3 +1,5 @@
+// src/components/FlyoutNav.js
+
 import React, { useState, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import { FiChevronDown } from "react-icons/fi";
@@ -11,12 +13,12 @@ const FlyoutNav = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [selected, setSelected] = useState(null);
   const [dir, setDir] = useState(null);
-
-  const closeMobileMenu = () => setMobileMenuOpen(false);
-
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
   const handleScroll = () => {
     const currentScroll = window.scrollY;
-    const newOpacity = Math.min(1, currentScroll / 500);
+    const newOpacity = Math.min(.85, currentScroll / 300);
     setOpacity(newOpacity);
   };
 
@@ -39,7 +41,7 @@ const FlyoutNav = () => {
   }, []);
 
   return (
-    <nav className="navbar" style={{ top: 0, position: 'sticky', zIndex: 1, backgroundColor: `rgba(51, 51, 51, ${opacity})` }}>
+    <nav className="navbar" style={{ top: 0, position: 'sticky', zIndex: 1, backgroundColor: `rgba(24, 30, 38, ${opacity})` }}>
       <div className="nav-content">
         <NavLink to="">
           <div className='navbar-logo-card'>
@@ -89,6 +91,7 @@ const FlyoutNav = () => {
         </button>
       </div>
       <div className="nav-spacer"></div>
+
       {isMobileMenuOpen && (
         <div className="mobile-menu">
           <NavLink id="NavLink" to="about" onClick={closeMobileMenu}>About</NavLink>
@@ -114,7 +117,7 @@ const Content = ({ selected, dir, handleLinkClick }) => {
       <Nub selected={selected} />
 
       {TABS.map((t) => (
-        <div style={{overflow: "hidden"}} key={t.id}>
+        <div style={{ overflow: "hidden" }} key={t.id}>
           {selected === t.id && (
             <motion.div
               initial={{ opacity: 0, x: dir === "l" ? 100 : dir === "r" ? -100 : 0 }}
@@ -167,89 +170,22 @@ const Nub = ({ selected }) => {
   );
 };
 
-const Products = ({handleLinkClick}) => (
+const Products = ({ handleLinkClick }) => (
   <div>
     <div className="products-container">
       <div>
         <h3 className="products-section-title">React</h3>
         <NavLink to="kanban" className="products-link" onClick={handleLinkClick}>Kanban</NavLink>
       </div>
-      {/* <div>
-        <h3 className="products-section-title">Scaleup</h3>
-        <a href="#" className="products-link">Live Coaching</a>
-        <a href="#" className="products-link">Reviews</a>
-        <a href="#" className="products-link">Tax/VAT</a>
-      </div>
-      <div>
-        <h3 className="products-section-title">Enterprise</h3>
-        <a href="#" className="products-link">White glove</a>
-        <a href="#" className="products-link">SOX Compliance</a>
-        <a href="#" className="products-link">Staffing</a>
-        <a href="#" className="products-link">More</a>
-      </div> */}
     </div>
-    {/* <button className="view-more-btn">
-      <span>View more</span>
-      <FiArrowRight />
-    </button> */}
   </div>
 );
-
-// const Pricing = () => (
-//   <div className="pricing-container">
-//     <a href="#" className="pricing-link">
-//       <FiHome className="pricing-icon" />
-//       <span className="pricing-text">Startup</span>
-//     </a>
-//     <a href="#" className="pricing-link">
-//       <FiBarChart2 className="pricing-icon" />
-//       <span className="pricing-text">Scaleup</span>
-//     </a>
-//     <a href="#" className="pricing-link">
-//       <FiPieChart className="pricing-icon" />
-//       <span className="pricing-text">Enterprise</span>
-//     </a>
-//   </div>
-// );
-
-// const Blog = () => (
-//   <div>
-//     <div className="blog-container">
-//       <a href="#" className="blog-link">
-//         <img className="blog-image" src="/imgs/blog/4.png" alt="Placeholder image" />
-//         <h4 className="blog-title">Lorem ipsum dolor</h4>
-//         <p className="blog-description">
-//           Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet illo quidem eos.
-//         </p>
-//       </a>
-//       <a href="#" className="blog-link">
-//         <img className="blog-image" src="/imgs/blog/5.png" alt="Placeholder image" />
-//         <h4 className="blog-title">Lorem ipsum dolor</h4>
-//         <p className="blog-description">
-//           Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet illo quidem eos.
-//         </p>
-//       </a>
-//     </div>
-//     <button className="view-more-btn">
-//       <span>View more</span>
-//       <FiArrowRight />
-//     </button>
-//   </div>
-// );
 
 const TABS = [
   {
     title: "Products",
     Component: Products,
   },
-  // {
-  //   title: "Pricing",
-  //   Component: Pricing,
-  // },
-  // {
-  //   title: "Blog",
-  //   Component: Blog,
-  // },
 ].map((n, idx) => ({ ...n, id: idx + 1 }));
 
 export default FlyoutNav;

@@ -1,18 +1,19 @@
+/* src/css/FlyoutNav.css */
+
 .navbar {
-  background-color: rgb(51, 51, 51);
-  color: white;
-  transition: background-color 300ms ease;   /* Smooth transition for background color change */
+  transition: background-color 300ms ease; /* Smooth transition for background color change */
   position: relative;
   width: 100%;
   z-index: 1000;
 }
+
 .navbar-logo-card {
   float: left;
   background-color: transparent;
   width: 100px;
   height: 100px;
-  /* perspective: 400px; */
 }
+
 .navbar-logo-card-inner {
   position: relative;
   width: 100%;
@@ -20,23 +21,20 @@
   transition: transform 1s;
   transform-style: preserve-3d;
 }
+
 .navbar-logo-card:hover .navbar-logo-card-inner {
-  -webkit-transform: rotateY(360deg);
-  -moz-transform: rotateY(360deg);
-  -o-transform: rotateY(360deg);
-  -ms-transform: rotateY(360deg);
   transform: rotateY(360deg);
 }
 
 .navbar-logo {
   border-radius: 20px;
-  height: 100px;                               /* Control the size of your logo */
-  width: auto;                                 /* Maintain aspect ratio */
-  vertical-align: middle;                      /* Aligns the logo vertically with other nav items */
-  margin: 10px 0px 0px 15px;                   /* Control the margin of your logo - Top Right Bottom Left */
+  height: 100px; /* Control the size of your logo */
+  width: auto; /* Maintain aspect ratio */
+  vertical-align: middle; /* Aligns the logo vertically with other nav items */
+  margin: 10px 0px 0px 15px; /* Control the margin of your logo - Top Right Bottom Left */
   transition: all 2s;
   display: inline-block;
-  background:#999;
+  background: #999;
   position: relative;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.29);
 }
@@ -45,12 +43,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width: 100%; */
   padding: 0 20px;
 }
 
 .nav-links {
-  float: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -77,24 +73,24 @@
   font-size: 16px;
   transition: color 0.3s ease;
 }
+
 .nav-link::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0%;
-  height: 2px;                          /* Height of the underline */
-  background-color: rgb(165, 182, 249);          /* Color of the underline */
-  transition: width 0.3s ease-in-out;   /* Smooth transition for the animation */
+  height: 2px; /* Height of the underline */
+  background-color: rgb(165, 182, 249); /* Color of the underline */
+  transition: width 0.3s ease-in-out; /* Smooth transition for the animation */
 }
 
 .nav-link:hover::after {
-  width: 100%;   /* Full width on hover */
-  color: #1abc9c;
+  width: 100%; /* Full width on hover */
 }
+
 .nav-spacer {
   flex: 1;
-
 }
 
 .dropdown-menu {
@@ -207,7 +203,7 @@
   padding: 1rem;
 }
 
-.bridge{
+.bridge {
   position: absolute;
   left: 0;
   right: 0;
@@ -339,10 +335,9 @@
 }
 
 td {
-  vertical-Align: middle;
+  vertical-align: middle;
   padding: 0px 20px;
 }
-
 
 #linkedin {
   text-align: center;
