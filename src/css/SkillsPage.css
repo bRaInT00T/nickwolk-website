@@ -1,87 +1,150 @@
 /* SkillsPage.css */
 .skills-container {
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-    padding: 20px;
-    
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.skills-grid {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-card {
+  display: block;
+  width: 250px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 25px;
+  border: 1px solid darkslategray;
+  color: #8dc6ff;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  background: hsla(220, 40%, 21%, 0.5);
+  text-transform: uppercase;
+  transition: all .35s;
+  padding: 20px;
+}
+
+.skill-card:before,
+.skill-card:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background: rgba(32, 46, 75);
+  z-index: -1;
+  transition: all .35s;
+}
+
+.skill-card:before {
+  opacity: .5;
+}
+
+.skill-card:after {
+  transition-delay: .2s;
+}
+
+.skill-card:hover {
+  color: #748dc3;
+}
+
+.skill-card:hover:before,
+.skill-card:hover:after {
+  top: 0;
+}
+
+.skill-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  transition: all 0.8s;
+}
+
+.skill-card:hover .skill-icon {
+  animation: wobble-hor-bottom 0.8s both;
+}
+
+.skill-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.skill-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill-card ul li {
+  color: #e4f1fe;
+  text-align: center;
+  font-size: .8em;
+  margin: 10px;
+}
+
+@-webkit-keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
   }
-  
-  .skills-grid {
-    padding-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
   }
-  
-  .skill-card{
-    display: block;
-    width: 250px;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 25px;
-    border: 1px solid darkslategray;
-    color: #8dc6ff;
-    font-size: 20px;
-    font-family: arial;
-    position: relative;
-    overflow: hidden;
-    background: hsla(220, 40%, 21%, 0.5);
-    text-transform: uppercase;
-    transition: all .35s;
-    padding: 20px;
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
   }
-  
-  .skill-card:before,
-  .skill-card:after{
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: -100%;
-    left: 0;
-    background: rgba(32, 46, 75);
-    z-index: -1;
-    transition: all .35s;
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
   }
-  
-  .skill-card:before{
-    opacity: .5;
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
   }
-  
-  .skill-card:after{
-    transition-delay: .2s;
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
   }
-  
-  .skill-card:hover{
-    color: #748dc3;
+}
+
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
   }
-  
-  .skill-card:hover:before,
-  .skill-card:hover:after{
-    top: 0;
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
   }
-  
-  .skill-icon {
-    font-size: 2rem;
-    margin-bottom: 10px;
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
   }
-  
-  .skill-card h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
   }
-  
-  .skill-card ul {
-    list-style-type: none;
-    padding: 0;
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
   }
-  
-  .skill-card ul li {
-    color: #e4f1fe;
-    text-align: center;
-    font-size: .8em;
-    margin: 10px;
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
   }
-  
+}
