@@ -33,7 +33,7 @@
   }
 
   .resume-dropdown-toggle {
-    font-size: 15px;
+    font-size: 16px;
     width: 36px;
     font-weight: bold;
     height: auto;
@@ -52,7 +52,7 @@
   }
   
   .resume-dropdown-menu {
-    width: 211px;
+    width: 209px;
     display: none;
     position: absolute;
     top: 100%;
