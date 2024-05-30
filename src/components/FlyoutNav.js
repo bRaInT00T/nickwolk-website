@@ -13,9 +13,11 @@ const FlyoutNav = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [selected, setSelected] = useState(null);
   const [dir, setDir] = useState(null);
+
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
   };
+
   const handleScroll = () => {
     const currentScroll = window.scrollY;
     const newOpacity = Math.min(.85, currentScroll / 300);
@@ -76,7 +78,7 @@ const FlyoutNav = () => {
             >
               <span>Just<span className='fun'>4</span>Fun</span>
               <FiChevronDown
-                className={`transition-transform ${selected === 1 ? "rotate-180" : ""}`}
+                className={`chevron-icon transition-transform ${selected === 1 ? "rotate-180" : ""}`}
               />
             </button>
             {isDropdownOpen && (
