@@ -57,6 +57,15 @@
   padding: 0;
 }
 
+.nav-item.dropdown .navButton:hover .chevron-icon {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.chevron-icon {
+  transition: transform 0.3s ease;
+}
+
 .nav-item {
   font-family: Inter, system-ui, sans-serif;
   font-size: 100%;
