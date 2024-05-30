@@ -92,8 +92,8 @@
               transform: scale(1) rotateX(0);
     }
     50% {
-      -webkit-transform: scale(1.5) rotateX(-180deg);
-              transform: scale(1.5) rotateX(-180deg);
+      -webkit-transform: scale(1.1) rotateX(-180deg);
+              transform: scale(1.1) rotateX(-180deg);
     }
     100% {
       -webkit-transform: scale(1) rotateX(0);
@@ -106,8 +106,8 @@
               transform: scale(1) rotateX(0);
     }
     50% {
-      -webkit-transform: scale(1.5) rotateX(-180deg);
-              transform: scale(1.5) rotateX(-180deg);
+      -webkit-transform: scale(1.1) rotateX(-180deg);
+              transform: scale(1.1) rotateX(-180deg);
     }
     100% {
       -webkit-transform: scale(1) rotateX(0);
