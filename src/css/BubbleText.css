@@ -1,42 +1,41 @@
 .container {
-    display: grid;
-    place-content: center;
-    padding: 20px;
-  }
-  
-  .text {
-    text-align: center;
-    font-size: 3rem; /* Adjust as needed */
-    font-weight: 300; /* Adjust as needed */
-    color: rgb(129, 140, 248); /* Adjust as needed */
-  }
-  
-  .hoverText {
-    transition: 0.35s font-weight, 0.35s color;
-  }
-  
-  .hoverText:hover {
-    font-weight: 900;
-    color: rgb(238, 242, 255);
-  }
-  
-  /* To the right */
-  .hoverText:hover + .hoverText {
-    font-weight: 500;
-    color: rgb(199, 210, 254);
-  }
-  
-  .hoverText:hover + .hoverText + .hoverText {
-    font-weight: 300;
-  }
-  
-  /* To the left */
-  .hoverText:has(+ .hoverText:hover) {
-    font-weight: 500;
-    color: rgb(199, 210, 254);
-  }
-  
-  .hoverText:has(+ .hoverText + .hoverText:hover) {
-    font-weight: 300;
-  }
-  
+  display: grid;
+  place-content: center;
+  padding: 20px;
+}
+
+.text {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+  color: rgb(129, 140, 248);
+}
+
+.hoverText {
+  transition: 0.35s font-weight, 0.35s color;
+}
+
+.hoverText:hover {
+  font-weight: 900;
+  color: rgb(238, 242, 255);
+}
+
+
+.hoverText:hover+.hoverText {
+  font-weight: 500;
+  color: rgb(199, 210, 254);
+}
+
+.hoverText:hover+.hoverText+.hoverText {
+  font-weight: 300;
+}
+
+
+.hoverText:has(+ .hoverText:hover) {
+  font-weight: 500;
+  color: rgb(199, 210, 254);
+}
+
+.hoverText:has(+ .hoverText + .hoverText:hover) {
+  font-weight: 300;
+}

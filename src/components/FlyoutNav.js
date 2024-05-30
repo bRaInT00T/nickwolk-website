@@ -1,5 +1,3 @@
-// src/components/FlyoutNav.js
-
 import React, { useState, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import { FiChevronDown } from "react-icons/fi";
