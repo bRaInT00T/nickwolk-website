@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import { FiChevronDown } from "react-icons/fi";
+import { FaBars, FaTimes } from 'react-icons/fa';
 import { AnimatePresence, motion } from "framer-motion";
 import '../css/FlyoutNav.css';
 import Logo from '../assets/img_desktop.svg';
@@ -89,7 +90,7 @@ const FlyoutNav = () => {
           </li>
         </ul>
         <button className="mobile-menu-icon" onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
-          {isMobileMenuOpen ? '✖' : '☰'}
+          {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
       <div className="nav-spacer"></div>
