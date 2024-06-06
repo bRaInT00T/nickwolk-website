@@ -1,24 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
-
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
-  
 }
 
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  
 }
 
 main {
   flex: 1;
-  /* Adding padding-bottom to ensure space for the footer */
   padding-bottom: 50px;
-  box-sizing: border-box; /* Ensure padding is included in height */
+  box-sizing: border-box;
 }
 
 h1 {
@@ -57,12 +54,6 @@ img {
   margin: 0 auto;
 }
 
-/* .fun {
-  display: inline-block;
-  transition: transform 0.3s ease-in-out;
-} */
-/* Text Effects */
-
 @keyframes blink {
   50% {
     opacity: 0;
@@ -73,9 +64,11 @@ img {
   0% {
     text-shadow: 0 0 10px #ff6347, 0 0 20px #ff6347, 0 0 30px #ff6347;
   }
+
   50% {
     text-shadow: 0 0 20px #ff6347, 0 0 30px #ff6347, 0 0 40px #ff6347;
   }
+
   100% {
     text-shadow: 0 0 10px #ff6347, 0 0 20px #ff6347, 0 0 30px #ff6347;
   }
@@ -86,22 +79,27 @@ img {
     text-shadow: 1px 1px #ff00c1, -1px -1px #00fff9;
     transform: translate(0);
   }
+
   20% {
     text-shadow: 1px -1px #ff00c1, -1px 1px #00fff9;
     transform: translate(-2px, 2px);
   }
+
   40% {
     text-shadow: -1px 1px #ff00c1, 1px -1px #00fff9;
     transform: translate(2px, -2px);
   }
+
   60% {
     text-shadow: -1px -1px #ff00c1, 1px 1px #00fff9;
     transform: translate(0);
   }
+
   80% {
     text-shadow: 1px 1px #ff00c1, -1px -1px #00fff9;
     transform: translate(-2px, 2px);
   }
+
   100% {
     text-shadow: -1px -1px #ff00c1, 1px 1px #00fff9;
     transform: translate(2px, -2px);
@@ -110,13 +108,10 @@ img {
 
 .fun {
   display: inline-block;
-  /* animation: pulse 1.5s infinite; */
-  /* animation: blink 1s step-end infinite; */
-  /* transition: transform 0.3s ease-in-out; */
 }
 
 .navButton:hover .fun {
-  /* transform: rotate(360deg); */
+
   animation: glitch 0.5s infinite;
   color: yellow;
   transform: rotate(360deg) scale(4);
@@ -127,9 +122,8 @@ img {
     visibility: hidden;
   }
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-
-
 .cursor {
   font-family: "Special Elite", system-ui;
   font-weight: 400;
@@ -147,20 +141,20 @@ img {
   font-size: 30px;
   color: #ffffff;
 }
+
 .vertical-timeline-element-date {
   font-family: "Raleway";
   margin-top: .2em;
   display: block;
   width: 100%;
   color: #ffffff;
-
 }
+
 @media only screen and (max-width: 1700px) {
   .vertical-timeline-element-date {
     display: block;
     float: none;
     color: #ffffff;
-    
   }
 }
 
@@ -180,7 +174,7 @@ img {
   height: 100%;
 } */
 
-.vertical-timeline-element-content{
+.vertical-timeline-element-content {
   border-radius: 5px;
   padding: 1em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -222,7 +216,7 @@ img {
   background-color: #f3bc3c;
 } */
 
-/* Particles */
+
 
 #particles-js {
   position: fixed;
@@ -233,4 +227,3 @@ img {
   z-index: -1;
   background-color: rgb(17, 24, 39);
 }
-

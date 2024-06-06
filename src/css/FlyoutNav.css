@@ -1,7 +1,5 @@
-/* src/css/FlyoutNav.css */
-
 .navbar {
-  transition: background-color 300ms ease; /* Smooth transition for background color change */
+  transition: background-color 300ms ease;
   position: relative;
   width: 100%;
   z-index: 1000;
@@ -28,10 +26,10 @@
 
 .navbar-logo {
   border-radius: 20px;
-  height: 100px; /* Control the size of your logo */
-  width: auto; /* Maintain aspect ratio */
-  vertical-align: middle; /* Aligns the logo vertically with other nav items */
-  margin: 10px 0px 0px 15px; /* Control the margin of your logo - Top Right Bottom Left */
+  height: 80px;
+  width: auto;
+  vertical-align: middle;
+  margin: 10px 0px 0px 15px;
   transition: all 2s;
   display: inline-block;
   background: #999;
@@ -51,7 +49,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  list-style: none; /* Remove bullets from main nav */
+  list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
@@ -81,6 +79,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 .nav-link::after {
@@ -89,13 +88,13 @@
   bottom: 0;
   left: 0;
   width: 0%;
-  height: 2px; /* Height of the underline */
-  background-color: rgb(165, 182, 249); /* Color of the underline */
-  transition: width 0.3s ease-in-out; /* Smooth transition for the animation */
+  height: 2px;
+  background-color: rgb(165, 182, 249);
+  transition: width 0.3s ease-in-out;
 }
 
 .nav-link:hover::after {
-  width: 100%; /* Full width on hover */
+  width: 100%;
 }
 
 .nav-spacer {
@@ -117,7 +116,7 @@
   transform: translateY(10px);
   transition: all 0.3s ease;
   z-index: 1;
-  list-style: none; /* Remove bullets from dropdown */
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -131,8 +130,8 @@
 
 .dropdown-item {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  opacity: 0; /* Initial opacity for fade-in effect */
-  animation: fadeIn 0.3s ease forwards; /* Apply fade-in effect */
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
 }
 
 .dropdown-item:nth-child(1) {
@@ -170,6 +169,7 @@
     opacity: 0;
     transform: translateY(10px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -231,20 +231,20 @@
 
 .products-section-title {
   margin-bottom: 0.5rem;
-  font-size: 0.875rem; /* text-sm */
-  font-weight: 500; /* font-medium */
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
 .products-link {
   display: block;
-  font-size: 0.875rem; /* text-sm */
-  color: #9ca3af; /* text-neutral-400 */
+  font-size: 0.875rem;
+  color: #9ca3af;
   text-decoration: none;
-  margin-bottom: 0.25rem; /* mb-1 */
+  margin-bottom: 0.25rem;
 }
 
 .products-link:hover {
-  color: #ffffff; /* hover:text-neutral-50 */
+  color: #ffffff;
 }
 
 .view-more-btn {
@@ -253,32 +253,32 @@
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  font-size: 0.875rem; /* text-sm */
-  color: #a5b4fc; /* text-indigo-300 */
+  font-size: 0.875rem;
+  color: #a5b4fc;
   text-decoration: none;
 }
 
 .view-more-btn:hover {
-  color: #ffffff; /* hover:text-neutral-50 */
+  color: #ffffff;
 }
 
 .nub {
   position: absolute;
   top: 0;
-  height: 1rem; /* h-4 */
-  width: 1rem; /* w-4 */
-  transform: translateX(300%) translateY(-50%) rotate(45deg); /* Adjusted translate values */
-  border-top-left-radius: 0.25rem; /* rounded-tl */
+  height: 1rem;
+  width: 1rem;
+  transform: translateX(300%) translateY(-50%) rotate(45deg);
+  border-top-left-radius: 0.25rem;
   border: 1px solid #4b5563;
   background-color: #111827;
 }
 
-/* Pricing component styles */
+
 .pricing-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  border-right: 1px solid #374151; /* divide-neutral-700 */
+  border-right: 1px solid #374151;
 }
 
 .pricing-link {
@@ -287,31 +287,31 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem 0; /* py-2 */
-  color: #9ca3af; /* text-neutral-400 */
+  padding: 0.5rem 0;
+  color: #9ca3af;
   text-decoration: none;
-  transition: color 0.3s ease; /* transition-colors */
+  transition: color 0.3s ease;
 }
 
 .pricing-link:hover {
-  color: #ffffff; /* hover:text-neutral-50 */
+  color: #ffffff;
 }
 
 .pricing-icon {
-  margin-bottom: 0.5rem; /* mb-2 */
-  font-size: 1.25rem; /* text-xl */
-  color: #a5b4fc; /* text-indigo-300 */
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: #a5b4fc;
 }
 
 .pricing-text {
-  font-size: 0.75rem; /* text-xs */
+  font-size: 0.75rem;
 }
 
-/* Blog component styles */
+
 .blog-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem; /* gap-2 */
+  gap: 0.5rem;
 }
 
 .blog-link {
@@ -319,23 +319,23 @@
 }
 
 .blog-image {
-  margin-bottom: 0.5rem; /* mb-2 */
-  height: 3.5rem; /* h-14 */
+  margin-bottom: 0.5rem;
+  height: 3.5rem;
   width: 100%;
-  border-radius: 0.5rem; /* rounded */
-  object-fit: cover; /* object-cover */
+  border-radius: 0.5rem;
+  object-fit: cover;
 }
 
 .blog-title {
-  margin-bottom: 0.125rem; /* mb-0.5 */
-  font-size: 0.875rem; /* text-sm */
-  font-weight: 500; /* font-medium */
-  color: #ffffff; /* text-neutral-50 */
+  margin-bottom: 0.125rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ffffff;
 }
 
 .blog-description {
-  font-size: 0.75rem; /* text-xs */
-  color: #9ca3af; /* text-neutral-400 */
+  font-size: 0.75rem;
+  color: #9ca3af;
 }
 
 .table {

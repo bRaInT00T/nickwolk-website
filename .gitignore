@@ -30,3 +30,4 @@ setup.sh
 *.bk*
 .eslintrc
 src/test
+.vscode/settings.json

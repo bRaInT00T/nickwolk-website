@@ -1,77 +1,76 @@
-/* ModernCarousel.css */
 .carousel-container {
-    height: 50vw;
-    min-height: 400px;
-    max-height: 600px;
-    background-color: black;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .carousel-button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 0.5rem;
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    bottom: 0;
-    transition: background-color 0.3s;
-  }
-  
-  .carousel-button:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-  
-  .carousel-button-left {
-    left: 0;
-  }
-  
-  .carousel-button-right {
-    right: 0;
-  }
-  
-  .carousel-overlay {
-    position: absolute;
-    inset: 0;
-    z-index: 5;
-    backdrop-filter: blur(2rem);
-  }
-  
-  .carousel-image {
-    max-height: 90%;
-    max-width: 90%;
-    margin: auto;
-    background-color: black;
-    object-fit: cover;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .carousel-title {
-    color: white;
-    font-size: 1.25rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(1rem);
-    font-weight: 600;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    z-index: 20;
-    left: 2.5rem;
-    bottom: 1rem;
-  }
-  
-  .carousel-bg {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.5;
-  }
+  height: 50vw;
+  min-height: 400px;
+  max-height: 600px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0.5rem;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  transition: background-color 0.3s;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-button-left {
+  left: 0;
+}
+
+.carousel-button-right {
+  right: 0;
+}
+
+.carousel-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  backdrop-filter: blur(2rem);
+}
+
+.carousel-image {
+  max-height: 90%;
+  max-width: 90%;
+  margin: auto;
+  background-color: black;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-title {
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1rem);
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 20;
+  left: 2.5rem;
+  bottom: 1rem;
+}
+
+.carousel-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
