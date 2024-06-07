@@ -8,6 +8,8 @@ import ExperiencePage from "./pages/experience";
 import SkillsPage from "./pages/skills";
 import ResumePage from "./pages/resume";
 import KanbanBoard from "./pages/kanbanBoard";
+import Phillies from "./pages/phillies";
+
 import "./css/App.css";
 import FlyoutNav from "./components/FlyoutNav";
 import Footer from "./components/Footer";
@@ -30,7 +32,7 @@ class App extends Component {
     this.initParticlesjs();
   }
   componentDidUpdate() {}
-
+  
   render() {
     return (
       <div id="root">
@@ -45,6 +47,7 @@ class App extends Component {
             <Route path="skills" element={<SkillsPage />} />
             <Route path="resume" element={<ResumePage />} />
             <Route path="kanban" element={<KanbanBoard />} />
+            <Route path="phillies" element={<Phillies />} />
           </Routes>
         </div>
       </main>
