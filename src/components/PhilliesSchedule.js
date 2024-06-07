@@ -117,7 +117,7 @@ const PhilliesSchedule = () => {
                   <span className='winLose' style={{ right: '30%' }}>{homeRecord.wins}-{homeRecord.losses}</span>
                   <span className='winLose' style={{ left: '30%' }}>{awayRecord.wins}-{awayRecord.losses}</span>
                   <span className='at'>@</span>
-                  <span style={{ position: 'absolute', bottom: '0', left: '0', fontSize: '.9rem', color: "#fff", zIndex: '2' }}>{day} {formattedDate} {time}</span>
+                  <span style={{ position: 'absolute', bottom: '10px', left: '0', fontSize: '.9rem', color: "#fff", zIndex: '2' }}>{day} {formattedDate} {time}</span>
                 
               </div>
             </div>
