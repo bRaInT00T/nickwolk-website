@@ -7,6 +7,7 @@ import '../css/PhilliesSchedule.css';
 const PhilliesSchedule = () => {
   const [record, setRecord] = useState([]);
   const [nextGames, setNextGames] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchSchedule = async () => {
@@ -56,17 +57,38 @@ const PhilliesSchedule = () => {
         setNextGames(games);
       } catch (error) {
         console.error('Error fetching schedule:', error);
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchSchedule();
   }, []);
 
+  if (loading) {
+    return (
+      <div className="loading-container">
+        <div className="spinner">
+          <img src={`https://www.mlbstatic.com/team-logos/143.svg`} alt="Phillies Logo" className="spinner-logo" />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div style={{ color: '#fff', padding: '20px', maxWidth: '800px', margin: 'auto', textAlign: 'center', fontFamily: 'Tahoma, sans-serif' }}>
       <h1><img src={`https://www.mlbstatic.com/team-logos/143.svg`} alt="P" style={{ height: '50px' }} />hiladelphia <img src={`https://www.mlbstatic.com/team-logos/143.svg`} alt="P" style={{ height: '50px' }} />hillies</h1>
       <h2>{record.leagueRank}</h2>
-      <Carousel showArrows={true} showThumbs={false} infiniteLoop={true} autoPlay={true} interval={8000} showStatus={true} stopOnHover={true}>
+      <Carousel 
+        showArrows={true} 
+        showThumbs={false} 
+        infiniteLoop={true} 
+        autoPlay={true} 
+        interval={8000} 
+        showStatus={true} 
+        stopOnHover={true}
+        selectedItem={0}
+      >
         {nextGames.map((game, index) => {
           const venue = game.venue.name;
           const venueId = game.venue.id;
