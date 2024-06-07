@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc98be53.css",
-    "main.js": "/static/js/main.540fde6e.js",
+    "main.css": "/static/css/main.fb7d1c6f.css",
+    "main.js": "/static/js/main.e88ea384.js",
     "static/js/453.660e32dd.chunk.js": "/static/js/453.660e32dd.chunk.js",
     "static/media/img_desktop.svg": "/static/media/img_desktop.d9020c3687c24f1c046e20633aa1502b.svg",
     "static/media/Nicholas_Wolk_Resume.docx": "/static/media/Nicholas_Wolk_Resume.4786d8b6245db6e044fb.docx",
@@ -10,12 +10,12 @@
     "static/media/school.svg": "/static/media/school.3a1ebafa3207ea504f170dc3aa7a5d45.svg",
     "static/media/work.svg": "/static/media/work.3710b62484ed638074240e99317c6c60.svg",
     "index.html": "/index.html",
-    "main.cc98be53.css.map": "/static/css/main.cc98be53.css.map",
-    "main.540fde6e.js.map": "/static/js/main.540fde6e.js.map",
+    "main.fb7d1c6f.css.map": "/static/css/main.fb7d1c6f.css.map",
+    "main.e88ea384.js.map": "/static/js/main.e88ea384.js.map",
     "453.660e32dd.chunk.js.map": "/static/js/453.660e32dd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc98be53.css",
-    "static/js/main.540fde6e.js"
+    "static/css/main.fb7d1c6f.css",
+    "static/js/main.e88ea384.js"
   ]
 }
