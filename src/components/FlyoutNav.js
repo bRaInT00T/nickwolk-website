@@ -177,6 +177,7 @@ const Products = ({ handleLinkClick }) => (
       <div>
         <h3 className="products-section-title">React</h3>
         <NavLink to="kanban" className="products-link" onClick={handleLinkClick}>Kanban</NavLink>
+        <NavLink to="phillies" className="products-link" onClick={handleLinkClick}><img src={`https://www.mlbstatic.com/team-logos/143.svg`} alt="P" style={{ position: "relative",  height: "20px" }}/>hillies</NavLink>
       </div>
     </div>
   </div>
