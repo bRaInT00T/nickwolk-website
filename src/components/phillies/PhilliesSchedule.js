@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import '../css/PhilliesSchedule.css';
+import './PhilliesSchedule.css';
 
 const PhilliesSchedule = () => {
   const [record, setRecord] = useState([]);
@@ -77,11 +77,12 @@ const PhilliesSchedule = () => {
 
   return (
     <div style={{ color: '#fff', padding: '20px', maxWidth: '800px', margin: 'auto', textAlign: 'center', fontFamily: 'Tahoma, sans-serif' }}>
-      <h1><img src={`https://www.mlbstatic.com/team-logos/143.svg`} alt="P" style={{ height: '50px' }} />hiladelphia <img src={`https://www.mlbstatic.com/team-logos/143.svg`} alt="P" style={{ height: '50px' }} />hillies</h1>
+      <h1><img src={`https://www.mlbstatic.com/team-logos/143.svg`} alt="P" style={{ height: '1em' }} />hiladelphia</h1>
+      <h1><img src={`https://www.mlbstatic.com/team-logos/143.svg`} alt="P" style={{ height: '1em' }} />hillies</h1>
       <h2>{record.leagueRank}</h2>
       <Carousel 
         showArrows={true} 
-        showThumbs={false} 
+        renderIndicator={false} 
         infiniteLoop={true} 
         autoPlay={true} 
         interval={8000} 
@@ -111,13 +112,13 @@ const PhilliesSchedule = () => {
                     {venue}
                   </span>
                   {/* Logos */}
-                  <img className='logo' src={`https://www.mlbstatic.com/team-logos/${homeLogo}.svg`} alt="Home Team Logo" style={{ right: '30%', width: '75px' }} />
+                  <img className='logo' src={`https://www.mlbstatic.com/team-logos/${homeLogo}.svg`} alt="Home Team Logo" style={{ right: '30%', maxwidth: '10%' }} />
                   <img className='logo'src={`https://www.mlbstatic.com/team-logos/${awayLogo}.svg`} alt="Away Team Logo" style={{ left: '30%', width: '75px' }} />
                   {/* Win-Loss Record */}
-                  <span className='winLose' style={{ right: '30%' }}>{homeRecord.wins}-{homeRecord.losses}</span>
+                  <span className='winLose' style={{ right: '31%' }}>{homeRecord.wins}-{homeRecord.losses}</span>
                   <span className='winLose' style={{ left: '30%' }}>{awayRecord.wins}-{awayRecord.losses}</span>
                   <span className='at'>@</span>
-                  <span style={{ position: 'absolute', bottom: '10px', left: '0', fontSize: '.9rem', color: "#fff", zIndex: '2' }}>{day} {formattedDate} {time}</span>
+                  <span style={{ position: 'absolute', bottom: '2em', fontSize: '2vw', color: "#fff", zIndex: '2' }}>{day} {formattedDate} {time}</span>
                 
               </div>
             </div>

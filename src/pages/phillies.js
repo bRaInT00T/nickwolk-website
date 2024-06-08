@@ -1,11 +1,10 @@
 import React from 'react';
-import PhilliesSchedule from '../components/PhilliesSchedule.js';
+import PhilliesSchedule from '../components/phillies/PhilliesSchedule.js';
 
 function Phillies() {
     return (
         <div>
             <PhilliesSchedule />
-            
         </div>
     );
 }
