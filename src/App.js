@@ -9,6 +9,7 @@ import SkillsPage from "./pages/skills";
 import ResumePage from "./pages/resume";
 import KanbanBoard from "./pages/kanbanBoard";
 import Phillies from "./pages/phillies";
+import VehicleInfo from './pages/vehicle';
 
 import "./css/App.css";
 import FlyoutNav from "./components/FlyoutNav";
@@ -48,6 +49,7 @@ class App extends Component {
             <Route path="resume" element={<ResumePage />} />
             <Route path="kanban" element={<KanbanBoard />} />
             <Route path="phillies" element={<Phillies />} />
+            <Route path="vehicle" element={<VehicleInfo />} />
           </Routes>
         </div>
       </main>

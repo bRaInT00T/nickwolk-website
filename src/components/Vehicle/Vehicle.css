@@ -1,0 +1,29 @@
+.vehicle-data {
+    font-family: Arial, sans-serif;
+    background-color: #0A4557;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .vehicle-data h1 {
+  }
+  
+  .recall-item, .complaint-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recall-item h3, .complaint-item h3 {
+    font-size: 1.2em;
+    color: #ffffff;
+  }
+  
+  .recall-item p, .complaint-item p {
+    margin: 5px 0;
+  }
+  
+  .recall-item p strong, .complaint-item p strong {
+    font-weight: bold;
+  }
+  
