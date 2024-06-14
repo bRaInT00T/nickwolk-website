@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.445a7096.css",
-    "main.js": "/static/js/main.82a0bad5.js",
+    "main.css": "/static/css/main.5dee085f.css",
+    "main.js": "/static/js/main.61136e28.js",
     "static/js/453.362f19e1.chunk.js": "/static/js/453.362f19e1.chunk.js",
     "static/media/img_desktop.svg": "/static/media/img_desktop.d9020c3687c24f1c046e20633aa1502b.svg",
     "static/media/kia_telluride_2022_black.png": "/static/media/kia_telluride_2022_black.c4ae21e703c139d6194d.png",
@@ -11,12 +11,12 @@
     "static/media/school.svg": "/static/media/school.3a1ebafa3207ea504f170dc3aa7a5d45.svg",
     "static/media/work.svg": "/static/media/work.3710b62484ed638074240e99317c6c60.svg",
     "index.html": "/index.html",
-    "main.445a7096.css.map": "/static/css/main.445a7096.css.map",
-    "main.82a0bad5.js.map": "/static/js/main.82a0bad5.js.map",
+    "main.5dee085f.css.map": "/static/css/main.5dee085f.css.map",
+    "main.61136e28.js.map": "/static/js/main.61136e28.js.map",
     "453.362f19e1.chunk.js.map": "/static/js/453.362f19e1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.445a7096.css",
-    "static/js/main.82a0bad5.js"
+    "static/css/main.5dee085f.css",
+    "static/js/main.61136e28.js"
   ]
 }
