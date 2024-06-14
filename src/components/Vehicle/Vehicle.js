@@ -124,7 +124,7 @@ const VehicleData = () => {
           {recalls.length === 0 ? (
             <p>No recalls found.</p>
           ) : (
-            <ul>
+            <ul style={{paddingInlineStart: "0px"}}>
               {recalls.map((recall) => (
                 <li key={recall.recall_number} className="recall-item" style={{ listStyleType: 'none', padding: '15px', border: '1px solid #3f4388', borderRadius: '15px' }}>
                   <h3>{recall.Manufacturer} - {recall.NHTSACampaignNumber}</h3>
@@ -143,7 +143,7 @@ const VehicleData = () => {
           {complaints.length === 0 ? (
             <p>No complaints found.</p>
           ) : (
-            <ul>
+            <ul style={{paddingInlineStart: "0px"}}>
               {complaints.map((complaint) => (
                 <li key={complaint.complaint_number} className="complaint-item" style={{ listStyleType: 'none', border: '1px solid #3f4388', borderRadius: '15px' }}>
                   <h3>{complaint.odino}</h3>
