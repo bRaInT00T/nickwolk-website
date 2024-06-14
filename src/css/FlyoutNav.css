@@ -187,8 +187,8 @@
 
 #overlay-content {
   position: fixed;
-  left: calc(100% - 23%);
-  width: 10%;
+  right: 0%;
+  width: 40%;
   border-radius: 0.5rem;
   border: 1px solid #4b5563;
   background: linear-gradient(180deg, #111827, #111827 50%, #1f2937 100%);
@@ -222,32 +222,38 @@
   padding: 1rem;
 }
 
+.dropdown-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-
-.products-container {
+.misc-container {
   display: flex;
   gap: 1rem;
 }
 
-.products-section {
+.misc-section {
   margin-bottom: 0.5rem;
 }
-
-.products-section-title {
-  margin-bottom: 0.5rem;
-  font-size: 0.875rem;
-  font-weight: 500;
+.misc-container, .apis-container {
+  flex: 1;
+  margin: 0 10px; /* Adjust margin as needed for spacing */
 }
 
-.products-link {
+.misc-section-title, .apis-section-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.misc-link, .apis-link {
   display: block;
-  font-size: 0.875rem;
   color: #9ca3af;
   text-decoration: none;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
-.products-link:hover {
+.misc-link:hover, .apis-link:hover {
   color: #ffffff;
 }
 
@@ -269,10 +275,10 @@
 .nub {
   position: absolute;
   top: 0;
-  height: 1rem; /* h-4 */
-  width: 1rem; /* w-4 */
-  transform: translateX(300%) translateY(-50%) rotate(45deg); /* Adjusted translate values */
-  border-top-left-radius: 0.25rem; /* rounded-tl */
+  height: 1rem;
+  width: 1rem;
+  transform: translateX(700%) translateY(-50%) rotate(45deg);
+  border-top-left-radius: 0.25rem;
   border: 1px solid #4b5563;
   background-color: #111827;
 }

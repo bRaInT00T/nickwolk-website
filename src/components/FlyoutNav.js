@@ -77,12 +77,12 @@ const FlyoutNav = () => {
             >
               <span>Just<span className='fun'>4</span>Fun</span>
               <FiChevronDown
-                className={`chevron-icon transition-transform ${selected === 1 ? "rotate-180" : ""}`}
+                className={`chevron-icon transition-transform ${isDropdownOpen ? "rotate-180" : ""}`}
               />
             </button>
             {isDropdownOpen && (
               <AnimatePresence>
-                {selected && <Content dir={dir} selected={selected} handleLinkClick={handleLinkClick} />}
+                <Content dir={dir} handleLinkClick={handleLinkClick} />
               </AnimatePresence>
             )}
           </li>
@@ -105,7 +105,7 @@ const FlyoutNav = () => {
   );
 };
 
-const Content = ({ selected, dir, handleLinkClick }) => {
+const Content = ({ dir, handleLinkClick }) => {
   return (
     <motion.div
       id="overlay-content"
@@ -115,21 +115,14 @@ const Content = ({ selected, dir, handleLinkClick }) => {
       className="dropdown-content"
     >
       <Bridge />
-      <Nub selected={selected} />
+      <Nub />
 
-      {TABS.map((t) => (
-        <div style={{ overflow: "hidden" }} key={t.id}>
-          {selected === t.id && (
-            <motion.div
-              initial={{ opacity: 0, x: dir === "l" ? 100 : dir === "r" ? -100 : 0 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.25, ease: "easeInOut" }}
-            >
-              <t.Component handleLinkClick={handleLinkClick} />
-            </motion.div>
-          )}
-        </div>
-      ))}
+      <div className="misc-container">
+        <Misc handleLinkClick={handleLinkClick} />
+      </div>
+      <div className="apis-container">
+        <APIs handleLinkClick={handleLinkClick} />
+      </div>
     </motion.div>
   );
 };
@@ -138,56 +131,36 @@ const Bridge = () => (
   <div className="bridge" />
 );
 
-const Nub = ({ selected }) => {
-  const [left, setLeft] = useState(0);
-
-  useEffect(() => {
-    const moveNub = () => {
-      if (selected) {
-        const hoveredTab = document.getElementById(`shift-tab-${selected}`);
-        const overlayContent = document.getElementById("overlay-content");
-
-        if (!hoveredTab || !overlayContent) return;
-
-        const tabRect = hoveredTab.getBoundingClientRect();
-        const { left: contentLeft } = overlayContent.getBoundingClientRect();
-
-        const tabCenter = tabRect.left + tabRect.width / 2 - contentLeft;
-
-        setLeft(tabCenter);
-      }
-    };
-
-    moveNub();
-  }, [selected]);
-
+const Nub = () => {
   return (
     <motion.span
       style={{ clipPath: "polygon(0 0, 100% 0, 50% 50%, 0% 100%)", left: "100%" }}
-      animate={{ left }}
-      transition={{ duration: 0.25, ease: "easeInOut" }}
       className="nub"
     />
   );
 };
 
-const Products = ({ handleLinkClick }) => (
+const Misc = ({ handleLinkClick }) => (
   <div>
-    <div className="products-container">
+    <div className="misc-container">
       <div>
-        <h3 className="products-section-title">React</h3>
-        <NavLink to="kanban" className="products-link" onClick={handleLinkClick}>Kanban</NavLink>
-        <NavLink to="phillies" className="products-link" onClick={handleLinkClick}><img src={`https://www.mlbstatic.com/team-logos/143.svg`} alt="P" style={{ position: "relative",  height: "20px" }}/>hillies</NavLink>
+        <h3 className="misc-section-title">Misc</h3>
+        <NavLink to="kanban" className="misc-link" onClick={handleLinkClick}>Kanban</NavLink>
       </div>
     </div>
   </div>
 );
 
-const TABS = [
-  {
-    title: "Products",
-    Component: Products,
-  },
-].map((n, idx) => ({ ...n, id: idx + 1 }));
+const APIs = ({ handleLinkClick }) => (
+  <div>
+    <div className="apis-container">
+      <div>
+        <h3 className="apis-section-title">APIs</h3>
+        <NavLink to="vehicle" className="apis-link" onClick={handleLinkClick}>My Vehicle</NavLink>
+        <NavLink to="phillies" className="apis-link" onClick={handleLinkClick}><img src={`https://www.mlbstatic.com/team-logos/143.svg`} alt="P" style={{ position: "relative", height: "20px" }}/>hillies</NavLink>
+      </div>
+    </div>
+  </div>
+);
 
 export default FlyoutNav;
