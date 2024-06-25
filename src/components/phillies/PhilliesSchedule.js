@@ -4,6 +4,12 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './PhilliesSchedule.css';
 
+function addDays(date, days) {
+  const newDate = new Date(date);
+  newDate.setDate(date.getDate() + days);
+  return newDate;
+}
+
 const PhilliesSchedule = () => {
   const [record, setRecord] = useState([]);
   const [nextGames, setNextGames] = useState([]);
@@ -20,7 +26,11 @@ const PhilliesSchedule = () => {
       const yyyy = today.getFullYear();
       let mm = today.getMonth() + 1;
       let dd = today.getDate();
-      const day5 = dd + 10;
+      const day5 = addDays(today, 10);
+      const day5mm = day5.getMonth() + 1;
+      const day5dd = day5.getDate();
+      const day5yyyy = day5.getFullYear();
+      // const day5 = dd + 10;
       if (dd < 10) {
         dd = `0${dd}`;
       }
@@ -28,7 +38,7 @@ const PhilliesSchedule = () => {
         mm = `0${mm}`;
       }
       const formattedToday = `${yyyy}-${mm}-${dd}`;
-      const formattedDay5 = `${yyyy}-${mm}-${day5}`;
+      const formattedDay5 = `${day5yyyy}-${day5mm}-${day5dd}`;
       try {
         // Fetch team's current record
         const standingsResponse = await axios.get(`${apiBaseUrl}/${stage}/standings`, {
