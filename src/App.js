@@ -10,6 +10,7 @@ import ResumePage from "./pages/resume";
 import KanbanBoard from "./pages/kanbanBoard";
 import Phillies from "./pages/phillies";
 import VehicleInfo from './pages/vehicle';
+import B64 from './pages/b64';
 
 import "./css/App.css";
 import FlyoutNav from "./components/FlyoutNav";
@@ -50,6 +51,7 @@ class App extends Component {
             <Route path="kanban" element={<KanbanBoard />} />
             <Route path="phillies" element={<Phillies />} />
             <Route path="vehicle" element={<VehicleInfo />} />
+            <Route path="b64" element={<B64 />} />
           </Routes>
         </div>
       </main>
