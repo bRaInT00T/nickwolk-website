@@ -1,0 +1,106 @@
+/* Base64EncoderDecoder.css */
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 5px;
+}
+
+textarea,
+input {
+    width: 100%;
+    margin: 10px 0;
+}
+
+input {
+    width: 25%;
+    align-self: center;
+}
+
+textarea[readonly] {
+    cursor: pointer;
+}
+
+.dropzone {
+    border: 2px dashed #0087F7;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h1,
+h3 {
+    font-family: Lato, “Lucida Grande”, “Lucida Sans Unicode”, Tahoma, sans-serif;
+    text-align: center;
+    margin: 10px 0;
+    color: #fff;
+}
+
+p {
+    color: green;
+}
+
+button.mode {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+button.encoding {
+    background-color: rgb(0, 255, 0);
+}
+
+button.decoding {
+    background-color: red;
+}
+
+.output-container {
+    position: relative;
+}
+
+.output-header {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    display: flex;
+    z-index: 1;
+}
+
+.icon-button {
+    color: gray;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.show-raw {
+    font-family: monospace;
+}
+
+.swap-icon {
+    position: relative;
+    align-content: center;
+}
+
+.swap-icon .icon-button {
+    font-size: 24px;
+    color: #fff;
+}
+
+.rotate {
+    animation: rotate-animation 0.5s ease;
+}
+
+@keyframes rotate-animation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
