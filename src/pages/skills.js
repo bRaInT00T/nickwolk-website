@@ -39,12 +39,12 @@ const skills = [
   },
   {
     category: 'Build & Deployment Automation',
-    skills: ['Bamboo', 'Bitbucket', 'Artifactory'],
+    skills: ['Terraform', 'Ansible','Bamboo', 'Bitbucket', 'Artifactory'],
     icon: <DiVisualstudio />
   },
   {
-    category: 'Secrets Management',
-    skills: ['CyberArk', 'AWS IAM'],
+    category: 'Security, Secrets & Compliance',
+    skills: ['CyberArk', 'AWS IAM', 'SOC Audit Support'],
     icon: <LiaUserSecretSolid />
   },
   {
